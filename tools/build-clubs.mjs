@@ -181,12 +181,26 @@ function score(wanted, hintCountry, cand) {
   const a = norm(wanted), aC = core(wanted);
   const b = norm(cand.name || ''), bC = core(cand.name || '');
   if (!b) return 0;
+  // Un préfixe ne vaut que s'il s'arrête sur une frontière de mot : « Braga »
+  // dans « Sporting Braga » désigne le même club, « Braga » dans « Bragança »
+  // non — et sans cette règle le second l'emportait.
+  const prefixeNet = (court, long) =>
+    long.startsWith(court) && (long.length === court.length || long[court.length] === ' ');
+  const motEntier = (petit, grand) => {
+    const i = grand.indexOf(petit);
+    if (i < 0) return false;
+    const avant = i === 0 || grand[i - 1] === ' ';
+    const apres = i + petit.length === grand.length || grand[i + petit.length] === ' ';
+    return avant && apres;
+  };
+
   let s;
   if (a === b) s = 100;
   else if (aC && aC === bC) s = 96;
-  else if (b.startsWith(a) || a.startsWith(b)) s = 82;
-  else if (bC && aC && (bC.startsWith(aC) || aC.startsWith(bC))) s = 78;
-  else if (b.includes(a) || a.includes(b)) s = 66;
+  else if (prefixeNet(a, b) || prefixeNet(b, a)) s = 82;
+  else if (bC && aC && (prefixeNet(aC, bC) || prefixeNet(bC, aC))) s = 78;
+  else if (motEntier(a, b) || motEntier(b, a)) s = 76;
+  else if (b.includes(a) || a.includes(b)) s = 60;
   else {
     const keep = w => w.length > 2 && !GENERIC.has(w);
     const wa = new Set(aC.split(' ').filter(keep)), wb = new Set(bC.split(' ').filter(keep));

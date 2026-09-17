@@ -1005,7 +1005,7 @@
   "groupe": "Le reste de l'Europe",
   "pays": "Autriche",
   "ville": "Wals-Siezenheim",
-  "confiance": "probable"
+  "confiance": "sûr"
  },
  {
   "id": "sturm-graz",
@@ -1071,12 +1071,12 @@
   "confiance": "sûr"
  },
  {
-  "id": "braganca",
-  "club": "Bragança",
+  "id": "sporting-braga",
+  "club": "Sporting Braga",
   "cherche": "Braga",
   "groupe": "Le reste de l'Europe",
   "pays": "Portugal",
-  "ville": "Bragança",
+  "ville": "Braga",
   "confiance": "sûr"
  },
  {
@@ -1148,7 +1148,7 @@
   "cherche": "Dinamo Batumi",
   "groupe": "Le reste de l'Europe",
   "pays": "Géorgie",
-  "ville": "Kobuleti",
+  "ville": "Batoumi",
   "confiance": "sûr"
  },
  {
@@ -1608,7 +1608,7 @@
   "groupe": "Le reste de l'Europe",
   "pays": "Luxembourg",
   "ville": "Dudelange",
-  "confiance": "probable"
+  "confiance": "sûr"
  },
  {
   "id": "banik-ostrava",
@@ -1662,7 +1662,7 @@
   "groupe": "Le reste de l'Europe",
   "pays": "Hongrie",
   "ville": "Budapest",
-  "confiance": "sûr"
+  "confiance": "probable"
  },
  {
   "id": "slovan-bratislava",
@@ -2310,7 +2310,7 @@
   "pays": "Panama",
   "ville": "Chitré",
   "confiance": "manuel",
-  "source": "Wikidata (es) — absent de Sportmonks"
+  "source": "absent de Sportmonks · coordonnées Wikidata (Chitré) · stade sans fiche, nom confirmé par Johann"
  },
  {
   "id": "al-ahli",
