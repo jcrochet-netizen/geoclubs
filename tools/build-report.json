@@ -2239,5 +2239,550 @@
   "pays": "Mexique",
   "ville": "Mexico City",
   "confiance": "sûr"
+ },
+ {
+  "id": "al-ahli",
+  "club": "Al Ahli",
+  "cherche": "Al Ahli",
+  "groupe": "Asie & Océanie",
+  "pays": "Arabie saoudite",
+  "ville": "Jeddah",
+  "confiance": "sûr"
+ },
+ {
+  "id": "al-hilal",
+  "club": "Al Hilal",
+  "cherche": "Al Hilal",
+  "groupe": "Asie & Océanie",
+  "pays": "Arabie saoudite",
+  "ville": "Riyadh",
+  "confiance": "sûr"
+ },
+ {
+  "id": "neom-sc",
+  "club": "NEOM SC",
+  "cherche": "Neom",
+  "groupe": "Asie & Océanie",
+  "pays": "Arabie saoudite",
+  "ville": "Tabouk",
+  "confiance": "sûr"
+ },
+ {
+  "id": "al-ittihad",
+  "club": "Al Ittihad",
+  "cherche": "Al Ittihad",
+  "groupe": "Asie & Océanie",
+  "pays": "Arabie saoudite",
+  "ville": "Jeddah",
+  "confiance": "sûr"
+ },
+ {
+  "id": "al-sadd",
+  "club": "Al Sadd",
+  "cherche": "Al Sadd",
+  "groupe": "Asie & Océanie",
+  "pays": "Qatar",
+  "ville": "Doha",
+  "confiance": "sûr"
+ },
+ {
+  "id": "al-gharafa",
+  "club": "Al Gharafa",
+  "cherche": "Al Gharafa",
+  "groupe": "Asie & Océanie",
+  "pays": "Qatar",
+  "ville": "Doha",
+  "confiance": "sûr"
+ },
+ {
+  "id": "al-rayyan",
+  "club": "Al Rayyan",
+  "cherche": "Al Rayyan",
+  "groupe": "Asie & Océanie",
+  "pays": "Qatar",
+  "ville": "Doha",
+  "confiance": "sûr"
+ },
+ {
+  "id": "al-arabi-sc",
+  "club": "Al-Arabi SC",
+  "cherche": "Al Arabi",
+  "groupe": "Asie & Océanie",
+  "pays": "Qatar",
+  "ville": "Doha",
+  "confiance": "sûr"
+ },
+ {
+  "id": "al-ain",
+  "club": "Al Ain",
+  "cherche": "Al Ain",
+  "groupe": "Asie & Océanie",
+  "pays": "Émirats arabes unis",
+  "ville": "Al Ain",
+  "confiance": "sûr"
+ },
+ {
+  "id": "al-wasl",
+  "club": "Al Wasl",
+  "cherche": "Al Wasl",
+  "groupe": "Asie & Océanie",
+  "pays": "Émirats arabes unis",
+  "ville": "Dubai",
+  "confiance": "sûr"
+ },
+ {
+  "id": "sepahan",
+  "club": "Sepahan",
+  "cherche": "Sepahan",
+  "groupe": "Asie & Océanie",
+  "pays": "Iran",
+  "ville": "Isfahan",
+  "confiance": "sûr"
+ },
+ {
+  "id": "tractor-sazi",
+  "club": "Tractor Sazi",
+  "cherche": "Tractor",
+  "groupe": "Asie & Océanie",
+  "pays": "Iran",
+  "ville": "Tabriz",
+  "confiance": "sûr"
+ },
+ {
+  "id": "neftchi",
+  "club": "Neftchi",
+  "cherche": "Neftchi Fergana",
+  "groupe": "Asie & Océanie",
+  "pays": "Ouzbékistan",
+  "ville": "Fergana",
+  "confiance": "sûr"
+ },
+ {
+  "id": "chennaiyin",
+  "club": "Chennaiyin",
+  "cherche": "Chennaiyin",
+  "groupe": "Asie & Océanie",
+  "pays": "Inde",
+  "ville": "Chennai",
+  "confiance": "sûr"
+ },
+ {
+  "id": "goa",
+  "club": "Goa",
+  "cherche": "FC Goa",
+  "groupe": "Asie & Océanie",
+  "pays": "Inde",
+  "ville": "Margao",
+  "confiance": "imposé"
+ },
+ {
+  "id": "mumbai-city",
+  "club": "Mumbai City",
+  "cherche": "Mumbai City",
+  "groupe": "Asie & Océanie",
+  "pays": "Inde",
+  "ville": "Mumbai",
+  "confiance": "sûr"
+ },
+ {
+  "id": "beijing-guoan",
+  "club": "Beijing Guoan",
+  "cherche": "Beijing Guoan",
+  "groupe": "Asie & Océanie",
+  "pays": "Chine",
+  "ville": "Beijing",
+  "confiance": "sûr"
+ },
+ {
+  "id": "shanghai-shenhua",
+  "club": "Shanghai Shenhua",
+  "cherche": "Shanghai Shenhua",
+  "groupe": "Asie & Océanie",
+  "pays": "Chine",
+  "ville": "Shanghai",
+  "confiance": "sûr"
+ },
+ {
+  "id": "incheon-united",
+  "club": "Incheon United",
+  "cherche": "Incheon United",
+  "groupe": "Asie & Océanie",
+  "pays": "Corée du Sud",
+  "ville": "Incheon",
+  "confiance": "sûr"
+ },
+ {
+  "id": "jeonbuk-motors",
+  "club": "Jeonbuk Motors",
+  "cherche": "Jeonbuk Hyundai Motors",
+  "groupe": "Asie & Océanie",
+  "pays": "Corée du Sud",
+  "ville": "Jeonju",
+  "confiance": "probable"
+ },
+ {
+  "id": "pohang-steelers",
+  "club": "Pohang Steelers",
+  "cherche": "Pohang Steelers",
+  "groupe": "Asie & Océanie",
+  "pays": "Corée du Sud",
+  "ville": "Pohang",
+  "confiance": "sûr"
+ },
+ {
+  "id": "seoul",
+  "club": "Seoul",
+  "cherche": "FC Seoul",
+  "groupe": "Asie & Océanie",
+  "pays": "Corée du Sud",
+  "ville": "Seoul",
+  "confiance": "sûr"
+ },
+ {
+  "id": "ulsan-hd",
+  "club": "Ulsan HD",
+  "cherche": "Ulsan HD",
+  "groupe": "Asie & Océanie",
+  "pays": "Corée du Sud",
+  "ville": "Ulsan",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cerezo-osaka",
+  "club": "Cerezo Osaka",
+  "cherche": "Cerezo Osaka",
+  "groupe": "Asie & Océanie",
+  "pays": "Japon",
+  "ville": "Osaka",
+  "confiance": "sûr"
+ },
+ {
+  "id": "kashiwa-reysol",
+  "club": "Kashiwa Reysol",
+  "cherche": "Kashiwa Reysol",
+  "groupe": "Asie & Océanie",
+  "pays": "Japon",
+  "ville": "Kashiwa",
+  "confiance": "sûr"
+ },
+ {
+  "id": "kashima-antlers",
+  "club": "Kashima Antlers",
+  "cherche": "Kashima Antlers",
+  "groupe": "Asie & Océanie",
+  "pays": "Japon",
+  "ville": "Kashima",
+  "confiance": "sûr"
+ },
+ {
+  "id": "nagoya-grampus",
+  "club": "Nagoya Grampus",
+  "cherche": "Nagoya Grampus",
+  "groupe": "Asie & Océanie",
+  "pays": "Japon",
+  "ville": "Nagoya",
+  "confiance": "sûr"
+ },
+ {
+  "id": "sanfrecce-hiroshima",
+  "club": "Sanfrecce Hiroshima",
+  "cherche": "Sanfrecce Hiroshima",
+  "groupe": "Asie & Océanie",
+  "pays": "Japon",
+  "ville": "Hiroshima",
+  "confiance": "sûr"
+ },
+ {
+  "id": "shimizu-s-pulse",
+  "club": "Shimizu S-Pulse",
+  "cherche": "Shimizu S-Pulse",
+  "groupe": "Asie & Océanie",
+  "pays": "Japon",
+  "ville": "Shizuoka",
+  "confiance": "sûr"
+ },
+ {
+  "id": "vissel-kobe",
+  "club": "Vissel Kobe",
+  "cherche": "Vissel Kobe",
+  "groupe": "Asie & Océanie",
+  "pays": "Japon",
+  "ville": "Kobe",
+  "confiance": "sûr"
+ },
+ {
+  "id": "yokohama-f-marinos",
+  "club": "Yokohama F. Marinos",
+  "cherche": "Yokohama F. Marinos",
+  "groupe": "Asie & Océanie",
+  "pays": "Japon",
+  "ville": "Yokohama",
+  "confiance": "sûr"
+ },
+ {
+  "id": "adelaide-united",
+  "club": "Adelaide United",
+  "cherche": "Adelaide United",
+  "groupe": "Asie & Océanie",
+  "pays": "Australie",
+  "ville": "Adelaide",
+  "confiance": "sûr"
+ },
+ {
+  "id": "brisbane-roar",
+  "club": "Brisbane Roar",
+  "cherche": "Brisbane Roar",
+  "groupe": "Asie & Océanie",
+  "pays": "Australie",
+  "ville": "Brisbane",
+  "confiance": "sûr"
+ },
+ {
+  "id": "central-coast-mariners",
+  "club": "Central Coast Mariners",
+  "cherche": "Central Coast Mariners",
+  "groupe": "Asie & Océanie",
+  "pays": "Australie",
+  "ville": "Gosford",
+  "confiance": "sûr"
+ },
+ {
+  "id": "auckland",
+  "club": "Auckland",
+  "cherche": "Auckland FC",
+  "groupe": "Asie & Océanie",
+  "pays": "Nouvelle-Zélande",
+  "ville": "Auckland",
+  "confiance": "imposé"
+ },
+ {
+  "id": "wellington-phoenix",
+  "club": "Wellington Phoenix",
+  "cherche": "Wellington Phoenix",
+  "groupe": "Asie & Océanie",
+  "pays": "Nouvelle-Zélande",
+  "ville": "Wellington",
+  "confiance": "sûr"
+ },
+ {
+  "id": "kaizer-chiefs",
+  "club": "Kaizer Chiefs",
+  "cherche": "Kaizer Chiefs",
+  "groupe": "Afrique",
+  "pays": "Afrique du Sud",
+  "ville": "Johannesburg",
+  "confiance": "sûr"
+ },
+ {
+  "id": "mamelodi-sundowns",
+  "club": "Mamelodi Sundowns",
+  "cherche": "Mamelodi Sundowns",
+  "groupe": "Afrique",
+  "pays": "Afrique du Sud",
+  "ville": "Tshwane",
+  "confiance": "sûr"
+ },
+ {
+  "id": "orlando-pirates",
+  "club": "Orlando Pirates",
+  "cherche": "Orlando Pirates",
+  "groupe": "Afrique",
+  "pays": "Afrique du Sud",
+  "ville": "Johannesburg",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cs-constantine",
+  "club": "CS Constantine",
+  "cherche": "CS Constantine",
+  "groupe": "Afrique",
+  "pays": "Algérie",
+  "ville": "Constantine",
+  "confiance": "sûr"
+ },
+ {
+  "id": "es-setif",
+  "club": "ES Sétif",
+  "cherche": "ES Setif",
+  "groupe": "Afrique",
+  "pays": "Algérie",
+  "ville": "Sétif",
+  "confiance": "sûr"
+ },
+ {
+  "id": "js-kabylie",
+  "club": "JS Kabylie",
+  "cherche": "JS Kabylie",
+  "groupe": "Afrique",
+  "pays": "Algérie",
+  "ville": "Tizi Ouzou",
+  "confiance": "sûr"
+ },
+ {
+  "id": "usm-alger",
+  "club": "USM Alger",
+  "cherche": "USM Alger",
+  "groupe": "Afrique",
+  "pays": "Algérie",
+  "ville": "Algiers",
+  "confiance": "sûr"
+ },
+ {
+  "id": "paradou-ac",
+  "club": "Paradou AC",
+  "cherche": "Paradou AC",
+  "groupe": "Afrique",
+  "pays": "Algérie",
+  "ville": "Hydra",
+  "confiance": "sûr"
+ },
+ {
+  "id": "raja-casablanca",
+  "club": "Raja Casablanca",
+  "cherche": "Raja Casablanca",
+  "groupe": "Afrique",
+  "pays": "Maroc",
+  "ville": "Casablanca",
+  "confiance": "sûr"
+ },
+ {
+  "id": "wydad-casablanca",
+  "club": "Wydad Casablanca",
+  "cherche": "Wydad Casablanca",
+  "groupe": "Afrique",
+  "pays": "Maroc",
+  "ville": "Casablanca",
+  "confiance": "sûr"
+ },
+ {
+  "id": "far-rabat",
+  "club": "FAR Rabat",
+  "cherche": "AS FAR",
+  "groupe": "Afrique",
+  "pays": "Maroc",
+  "ville": "Rabat",
+  "confiance": "imposé"
+ },
+ {
+  "id": "fus-rabat",
+  "club": "FUS Rabat",
+  "cherche": "FUS Rabat",
+  "groupe": "Afrique",
+  "pays": "Maroc",
+  "ville": "Rabat",
+  "confiance": "sûr"
+ },
+ {
+  "id": "club-africain",
+  "club": "Club Africain",
+  "cherche": "Club Africain",
+  "groupe": "Afrique",
+  "pays": "Tunisie",
+  "ville": "Radès",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cs-sfaxien",
+  "club": "CS Sfaxien",
+  "cherche": "CS Sfaxien",
+  "groupe": "Afrique",
+  "pays": "Tunisie",
+  "ville": "sfax",
+  "confiance": "sûr"
+ },
+ {
+  "id": "es-tunis",
+  "club": "ES Tunis",
+  "cherche": "ES Tunis",
+  "groupe": "Afrique",
+  "pays": "Tunisie",
+  "ville": "Radès",
+  "confiance": "sûr"
+ },
+ {
+  "id": "etoile-du-sahel",
+  "club": "Etoile du Sahel",
+  "cherche": "Etoile du Sahel",
+  "groupe": "Afrique",
+  "pays": "Tunisie",
+  "ville": "Susah",
+  "confiance": "sûr"
+ },
+ {
+  "id": "al-ahly",
+  "club": "Al Ahly",
+  "cherche": "Al Ahly",
+  "groupe": "Afrique",
+  "pays": "Égypte",
+  "ville": "Cairo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "pyramids-fc",
+  "club": "Pyramids FC",
+  "cherche": "Pyramids",
+  "groupe": "Afrique",
+  "pays": "Égypte",
+  "ville": "Cairo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "zamalek",
+  "club": "Zamalek",
+  "cherche": "Zamalek",
+  "groupe": "Afrique",
+  "pays": "Égypte",
+  "ville": "Cairo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "canon",
+  "club": "Canon",
+  "cherche": "Canon Yaounde",
+  "groupe": "Afrique",
+  "pays": "Cameroun",
+  "ville": "Yaoundé",
+  "confiance": "sûr"
+ },
+ {
+  "id": "tp-mazembe",
+  "club": "TP Mazembe",
+  "cherche": "TP Mazembe",
+  "groupe": "Afrique",
+  "pays": "Congo-Kinshasa",
+  "ville": "Lubumbashi",
+  "confiance": "sûr"
+ },
+ {
+  "id": "asec-mimosas",
+  "club": "ASEC Mimosas",
+  "cherche": "ASEC Mimosas",
+  "groupe": "Afrique",
+  "pays": "Côte d’Ivoire",
+  "ville": "Abidjan",
+  "confiance": "sûr"
+ },
+ {
+  "cherche": "Dreams FC",
+  "groupe": "Afrique",
+  "erreur": "aucun résultat"
+ },
+ {
+  "id": "diambars",
+  "club": "Diambars",
+  "cherche": "Diambars",
+  "groupe": "Afrique",
+  "pays": "Sénégal",
+  "ville": "Saly",
+  "confiance": "sûr"
+ },
+ {
+  "id": "generation-foot",
+  "club": "Generation Foot",
+  "cherche": "Generation Foot",
+  "groupe": "Afrique",
+  "pays": "Sénégal",
+  "ville": "Déni Biram Ndao",
+  "confiance": "imposé"
  }
 ]

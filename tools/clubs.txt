@@ -243,3 +243,100 @@ Tigres UANL | Mexico
 Monterrey | Mexico
 Guadalajara | Mexico
 Cruz Azul | Mexico
+
+## Asie & Océanie
+
+# Arabie saoudite
+Al Ahli | Saudi Arabia
+Al Hilal | Saudi Arabia
+Neom | Saudi Arabia
+Al Ittihad | Saudi Arabia
+
+# Qatar
+Al Sadd | Qatar
+Al Gharafa | Qatar
+Al Rayyan | Qatar
+Al Arabi | Qatar
+
+# Émirats arabes unis
+Al Ain | United Arab Emirates
+Al Wasl | United Arab Emirates
+
+# Iran
+Sepahan | Iran
+Tractor | Iran
+
+# Ouzbékistan
+Neftchi Fergana | Uzbekistan
+
+# Inde
+Chennaiyin | India
+FC Goa #435
+Mumbai City | India
+
+# Chine
+Beijing Guoan | China
+Shanghai Shenhua | China
+
+# Corée du Sud
+Incheon United | South Korea
+Jeonbuk Hyundai Motors | South Korea
+Pohang Steelers | South Korea
+FC Seoul | South Korea
+Ulsan HD | South Korea
+
+# Japon
+Cerezo Osaka | Japan
+Kashiwa Reysol | Japan
+Kashima Antlers | Japan
+Nagoya Grampus | Japan
+Sanfrecce Hiroshima | Japan
+Shimizu S-Pulse | Japan
+Vissel Kobe | Japan
+Yokohama F. Marinos | Japan
+
+# Australie et Nouvelle-Zélande
+Adelaide United | Australia
+Brisbane Roar | Australia
+Central Coast Mariners | Australia
+Auckland FC #273583
+Wellington Phoenix | New Zealand
+
+## Afrique
+
+# Afrique du Sud
+Kaizer Chiefs | South Africa
+Mamelodi Sundowns | South Africa
+Orlando Pirates | South Africa
+
+# Algérie
+CS Constantine | Algeria
+ES Setif | Algeria
+JS Kabylie | Algeria
+USM Alger | Algeria
+Paradou AC | Algeria
+
+# Maroc
+Raja Casablanca | Morocco
+Wydad Casablanca | Morocco
+AS FAR #16851
+FUS Rabat | Morocco
+
+# Tunisie
+Club Africain | Tunisia
+CS Sfaxien | Tunisia
+ES Tunis | Tunisia
+Etoile du Sahel | Tunisia
+
+# Égypte
+Al Ahly | Egypt
+Pyramids | Egypt
+Zamalek | Egypt
+
+# Afrique de l'Ouest et centrale
+Canon Yaounde | Cameroon
+TP Mazembe | DR Congo
+ASEC Mimosas | Ivory Coast
+Dreams FC | Ghana
+Diambars | Senegal
+Generation Foot #17142

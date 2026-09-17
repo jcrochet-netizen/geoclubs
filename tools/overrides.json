@@ -85,5 +85,45 @@
     "name": "New York Red Bulls",
     "city": "Harrison",
     "venue": "Red Bull Arena"
+  },
+  "goa": {
+    "name": "FC Goa",
+    "city": "Margao"
+  },
+  "far-rabat": {
+    "name": "AS FAR",
+    "city": "Rabat"
+  },
+  "auckland": {
+    "name": "Auckland FC",
+    "city": "Auckland",
+    "lat": -36.876,
+    "lon": 174.8153,
+    "venue": "Go Media Stadium"
+  },
+  "generation-foot": {
+    "city": "Déni Biram Ndao",
+    "lat": 14.8444,
+    "lon": -17.1944,
+    "venue": "Stade Déni Biram Ndao"
+  },
+  "jeonbuk-motors": {
+    "name": "Jeonbuk Hyundai Motors"
+  },
+  "seoul": {
+    "name": "FC Seoul"
+  },
+  "tractor-sazi": {
+    "name": "Tractor"
+  },
+  "neftchi": {
+    "name": "Neftchi Fergana"
+  },
+  "canon": {
+    "name": "Canon Yaoundé",
+    "city": "Yaoundé"
+  },
+  "pyramids-fc": {
+    "name": "Pyramids FC"
   }
 }

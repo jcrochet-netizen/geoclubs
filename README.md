@@ -13,9 +13,10 @@ carte mondiale.
 
 ## Ce qu'il y a dedans
 
-- **249 clubs, 65 pays, 4 continents**, sur 9 700 km d'est en ouest.
-- Quatre ensembles cumulables : les 5 grands championnats (96 clubs), le reste de
-  l'Europe (108), l'Amérique du Sud (32), l'Amérique du Nord (13).
+- **309 clubs, 85 pays, six continents**, de Seattle à Auckland.
+- Six ensembles cumulables : les 5 grands championnats (96 clubs), le reste de
+  l'Europe (108), l'Asie & Océanie (36), l'Amérique du Sud (32), l'Afrique (24)
+  et l'Amérique du Nord (13).
 - **Le pays n'est jamais affiché** — trois indices par partie permettent de l'acheter.
 - Carte du monde **en Canvas**, zoom et déplacement à 60 images/seconde.
 - 10, 20, 50 ou tous les clubs, tirage **sans remise**.
@@ -134,7 +135,7 @@ perf.html                   mesure des images par seconde
 assets/map.js               moteur Canvas : projection, deux LOD, culling
 assets/app.js               logique de jeu, indices, score, partage
 assets/style.css            thème sombre
-data/clubs.json             249 clubs
+data/clubs.json             309 clubs
 data/basemap.json           fond grossier (vue mondiale)
 data/basemap-detail.json    fond fin (zoom)
 data/logos.json             id du club → chemin du logo

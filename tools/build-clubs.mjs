@@ -221,6 +221,21 @@ async function saveLogo(url, id) {
   return 'logos/' + id + '.' + ext;
 }
 
+const COUNTRY_PROBE = (args.find(a => a.startsWith('--country=')) || '').split('=').slice(1).join('=');
+if (COUNTRY_PROBE) {
+  const u = new URL('https://api.sportmonks.com/v3/core/countries/search/' + encodeURIComponent(COUNTRY_PROBE));
+  u.searchParams.set('api_token', TOKEN);
+  const c = (await (await fetch(u)).json()).data?.[0];
+  if (!c) { console.log('pays introuvable'); process.exit(1); }
+  console.log(`${c.name} → country_id ${c.id}`);
+  const t = await api(`/teams/countries/${c.id}`, { per_page: 50, include: 'venue' });
+  for (const x of (t.data || [])) {
+    if (RESERVE.test(x.name || '')) continue;
+    console.log(`   ${String(x.id).padEnd(8)} ${pad(x.name, 28)} ${x.venue?.latitude ?? 'PAS DE COORDS'}`);
+  }
+  process.exit(0);
+}
+
 if (PROBE) {
   const r = await api(`/teams/search/${encodeURIComponent(PROBE)}`, { include: 'country;venue' });
   const d = r.data || [];
