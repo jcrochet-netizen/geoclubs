@@ -155,12 +155,14 @@
     return Math.min(pw / dx, ph / dy);
   };
   GeoMap.prototype.home = function (animate) {
+    this._stopGlide();
     var b = this.homeBox;
     this.minK = this._fitK(b);
     this._to({ k: this.minK, cx: (b.w + b.e) / 2, cy: (mercY(b.s) + mercY(b.n)) / 2 }, animate ? 520 : 0);
   };
   GeoMap.prototype.fitPoints = function (pts, animate, padPx) {
     if (!pts.length) return;
+    this._stopGlide();
     var w = Infinity, e = -Infinity, s = Infinity, n = -Infinity;
     pts.forEach(function (p) {
       w = Math.min(w, p.lon); e = Math.max(e, p.lon);
@@ -203,13 +205,48 @@
     })(t0);
   };
 
-  GeoMap.prototype.zoomBy = function (factor, sx, sy) {
-    if (sx == null) { sx = this.W / 2; sy = this.H / 2; }
+  /* Le zoom glisse vers une cible au lieu d'y sauter. Chaque cran de molette
+     déplace la cible, la vue la rejoint image par image : les crans rapides se
+     composent au lieu de se combattre, et les boutons s'animent sans code de
+     plus. 0,26 par image ≈ 250 ms pour arriver, assez vif pour rester réactif. */
+  var GLIDE = 0.26;
+
+  GeoMap.prototype._applyZoom = function (k, sx, sy) {
     var before = this.toLonLat(sx, sy), beforeY = mercY(before.lat);
-    var st = this._clamp({ k: this.k * factor, cx: this.cx, cy: this.cy });
-    st.cx = before.lon - (sx - this.W / 2) / st.k;
+    var st = this._clamp({ k: k, cx: this.cx, cy: this.cy });
+    st.cx = before.lon - (sx - this.W / 2) / st.k;      // le point sous le curseur ne bouge pas
     st.cy = beforeY - (this.H / 2 - sy) / st.k;
     this._to(st, 0);
+  };
+
+  GeoMap.prototype._stopGlide = function () {
+    if (this._glide) { cancelAnimationFrame(this._glide); this._glide = null; }
+    this._target = null;
+  };
+
+  /** direct = true pour le pincement tactile, déjà continu par nature. */
+  GeoMap.prototype.zoomTo = function (k, sx, sy, direct) {
+    if (sx == null) { sx = this.W / 2; sy = this.H / 2; }
+    k = Math.max(this.minK, Math.min(this.minK * this.maxZoom, k));
+    if (direct) { this._stopGlide(); return this._applyZoom(k, sx, sy); }
+    this._target = { k: k, sx: sx, sy: sy };
+    if (this._glide) return;
+    var self = this;
+    this._glide = requestAnimationFrame(function step() {
+      var t = self._target;
+      if (!t) { self._glide = null; return; }
+      var d = Math.log(t.k) - Math.log(self.k);
+      if (Math.abs(d) < 0.0015) { self._applyZoom(t.k, t.sx, t.sy); self._stopGlide(); return; }
+      self._applyZoom(Math.exp(Math.log(self.k) + d * GLIDE), t.sx, t.sy);
+      self._glide = requestAnimationFrame(step);
+    });
+  };
+
+  GeoMap.prototype.zoomBy = function (factor, sx, sy) {
+    // On compose sur la cible en cours, pas sur la vue : sinon deux crans
+    // rapprochés s'annulent en partie.
+    var base = (this._glide && this._target) ? this._target.k : this.k;
+    this.zoomTo(base * factor, sx, sy);
   };
 
   GeoMap.prototype.resize = function () {
@@ -318,6 +355,7 @@
     }
     host.addEventListener('pointerdown', function (e) {
       if (self.locked) return;
+      self._stopGlide();
       host.setPointerCapture(e.pointerId);
       pts.set(e.pointerId, local(e));
       if (pts.size === 1) { down = { p: local(e), t: performance.now(), cx: self.cx, cy: self.cy }; moved = false; }
@@ -334,7 +372,7 @@
       if (pts.size >= 2 && pinch) {
         var a = Array.from(pts.values());
         var d = Math.hypot(a[0].x - a[1].x, a[0].y - a[1].y);
-        if (pinch.d > 4) self.zoomBy((d / pinch.d) * (pinch.k / self.k), (a[0].x + a[1].x) / 2, (a[0].y + a[1].y) / 2);
+        if (pinch.d > 4) self.zoomTo(pinch.k * (d / pinch.d), (a[0].x + a[1].x) / 2, (a[0].y + a[1].y) / 2, true);
         return;
       }
       if (!down) return;
@@ -362,12 +400,17 @@
       if (self.locked) return;
       e.preventDefault();
       var p = local(e);
-      var d = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaMode === 2 ? e.deltaY * 400 : e.deltaY;
-      self.zoomBy(Math.exp(-d * 0.0022), p.x, p.y);
+      var d = e.deltaY;
+      if (e.deltaMode === 1) d *= 16; else if (e.deltaMode === 2) d *= 400;
+      // Un cran de molette vaut ~100, un pavé tactile 1 à 10. On borne pour que
+      // le premier n'emporte pas tout, et on répond plus fort au pincement d'un
+      // pavé tactile, que le navigateur signale par ctrlKey.
+      d = Math.max(-70, Math.min(70, d));
+      self.zoomBy(Math.exp(-d * (e.ctrlKey ? 0.020 : 0.0075)), p.x, p.y);
     }, { passive: false });
     host.addEventListener('dblclick', function (e) {
       if (self.locked) return;
-      var p = local(e); self.zoomBy(1.9, p.x, p.y);
+      var p = local(e); self.zoomBy(2.2, p.x, p.y);
     });
   };
 
