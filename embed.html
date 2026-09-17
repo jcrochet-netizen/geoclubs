@@ -36,20 +36,26 @@
 <script>
 (function () {
   var f = document.getElementById('geoclubs');
+  // L'origine du jeu, déduite du src : rien à retoucher si l'adresse change.
+  var ORIGINE = new URL(f.src, location.href).origin;
 
-  // On annonce au jeu l'adresse de CETTE page : ses boutons de partage doivent
-  // renvoyer ici, pas vers github.io.
+  // On annonce au jeu l'adresse de CETTE page, pour que ses boutons de partage
+  // renvoient ici. Ciblé sur son origine : avec '*', l'URL partirait vers
+  // n'importe quel site ayant pris la place de l'iframe.
   function annoncer() {
-    try { f.contentWindow.postMessage({ type: 'geoclubs:parent', url: location.href }, '*'); } catch (e) {}
+    try { f.contentWindow.postMessage({ type: 'geoclubs:parent', url: location.href }, ORIGINE); } catch (e) {}
   }
-  f.addEventListener('load', annoncer);
-  annoncer();
+  f.addEventListener('load', annoncer); annoncer();
 
   // Le jeu renvoie sa hauteur : l'accueil, une manche et l'écran final
   // n'occupent pas la même place.
   addEventListener('message', function (e) {
-    if (e.source !== f.contentWindow || !e.data) return;
-    if (e.data.type === 'geoclubs:height') f.style.height = Math.max(600, e.data.height + 8) + 'px';
+    if (e.origin !== ORIGINE) return;           // l'expéditeur doit être le jeu
+    if (e.source !== f.contentWindow) return;   // et cette iframe précisément
+    if (!e.data || e.data.type !== 'geoclubs:height') return;
+    var h = Number(e.data.height);              // jamais la valeur brute
+    if (!isFinite(h) || !(h > 0)) return;       // null devient 0, pas une hauteur
+    f.style.height = Math.min(4000, Math.max(600, Math.round(h) + 8)) + 'px';
   });
 })();
 </script>
