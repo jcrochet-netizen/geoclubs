@@ -216,9 +216,10 @@
     "venue": "Stade Djúpumýra"
   },
   "dinamo-batumi": {
-    "city": "Kobuleti",
-    "lat": 41.81298,
-    "lon": 41.77446,
-    "venue": "Chele Arena"
+    "city": "Batoumi",
+    "lat": 41.63528,
+    "lon": 41.61917,
+    "venue": "Adjarabet Arena",
+    "source": "Wikidata ne liste que Chele Arena (Kobuleti) pour ce club — stade secondaire"
   }
 }

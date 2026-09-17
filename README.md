@@ -147,6 +147,11 @@ Un club signalé « hors de toute terre » est le plus souvent un stade côtier 
 le trait de côte simplifié rejette d'un kilomètre — à distinguer d'un club
 franchement dans le mauvais pays, que le script sépare clairement.
 
+Ce que l'audit **ne** voit pas : un mauvais stade à l'intérieur du bon pays. Le
+Dinamo Batumi était donné à Chele Arena, à Kobuleti, alors qu'il joue à
+l'Adjarabet Arena de Batoumi — 24 km plus au sud, et Wikidata ne liste que le
+premier. Seule une relecture humaine attrape ce genre d'écart.
+
 ## Mise en ligne et intégration
 
 Identiques à GeoConf : *Settings → Pages → Source : GitHub Actions*, puis une
