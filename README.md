@@ -1,6 +1,7 @@
 # GeoClubs — Le GeoGuessr du football mondial
 
-> Des cinq grands championnats à Rrogozhinë, Almaty et Guayaquil.
+> Le jeu football et géographie pour les hipsters.
+> Des cinq grands championnats à Kashiwa, Abidjan et Guayaquil.
 
 Un club s'affiche. Vous le placez sur une carte du monde. **Chaque kilomètre
 d'écart vaut un point — et le meilleur score est le plus petit.**

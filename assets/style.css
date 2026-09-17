@@ -50,6 +50,7 @@ button{font:inherit;color:inherit}
   font-weight:700;letter-spacing:-.03em}
 .title em{font-style:normal;color:var(--accent)}
 .tagline{margin:0 0 14px;font-family:var(--fd);font-size:clamp(15px,2.6vw,18px);font-weight:500;color:#B9C6E6}
+.tagline-sub{margin:-8px 0 14px;font-size:14.5px;color:var(--muted)}
 .lede{margin:0;max-width:56ch;color:var(--muted);font-size:14.5px}
 .lede strong{color:var(--txt);font-weight:600}
 
