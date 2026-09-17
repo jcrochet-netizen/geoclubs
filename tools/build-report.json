@@ -945,6 +945,24 @@
   "confiance": "sûr"
  },
  {
+  "id": "genk",
+  "club": "Genk",
+  "cherche": "Racing Genk",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Belgique",
+  "ville": "Genk",
+  "confiance": "imposé"
+ },
+ {
+  "id": "standard-liege",
+  "club": "Standard Liège",
+  "cherche": "Standard Liège",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Belgique",
+  "ville": "Liege",
+  "confiance": "sûr"
+ },
+ {
   "id": "young-boys",
   "club": "Young Boys",
   "cherche": "Young Boys",

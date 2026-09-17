@@ -151,7 +151,10 @@ function searchTerms(name) {
     if (s.length >= 3 && !out.some(x => x.toLowerCase() === s.toLowerCase())) out.push(s);
   };
   add(name); add(ascii(name));
-  const words = [...new Set(core(name).split(' '))].filter(w => w.length >= 4);
+  // Jamais un mot passe-partout comme mot distinctif : chercher « racing » pour
+  // Racing Genk ramenait un club nommé « Racing », pas le Genk attendu.
+  const words = [...new Set(core(name).split(' '))]
+    .filter(w => w.length >= 4 && !GENERIC.has(w));
   if (words[0]) add(words[0]);
   const longest = [...words].sort((a, b) => b.length - a.length)[0];
   if (longest && longest !== words[0]) add(longest);
