@@ -22,7 +22,12 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      # enablement crée le site Pages s'il n'existe pas encore : sans lui, le tout
+      # premier déploiement échoue tant qu'on n'a pas basculé Settings → Pages
+      # sur « GitHub Actions » à la main.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
