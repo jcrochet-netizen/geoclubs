@@ -17,9 +17,15 @@ carte mondiale.
 - Six ensembles cumulables : les 5 grands championnats (96 clubs), le reste de
   l'Europe (108), l'Asie & Océanie (36), l'Amérique du Sud (32), l'Afrique (24)
   et l'Amérique du Nord (13).
-- **Le pays n'est jamais affiché** — trois indices par partie permettent de l'acheter.
+- **Le pays n'est jamais affiché** — des indices permettent de l'acheter, à raison
+  d'un par tranche de dix clubs, plafonné à dix : 10 clubs → 1 indice, 20 → 2,
+  50 → 5, 100 → 10, tout le paquet → 10.
+- Une case **« Mix de pays »** tire un club par pays avant d'en reprendre un
+  deuxième : sur 50 manches, 50 pays différents au lieu de 33 en moyenne avec un
+  tirage classique, que l'Angleterre et l'Espagne dominent.
+- Rien n'est coché au départ : au joueur de composer sa partie.
 - Carte du monde **en Canvas**, zoom et déplacement à 60 images/seconde.
-- 10, 20, 50 ou tous les clubs, tirage **sans remise**.
+- 10, 20, 50, 100 ou tous les clubs, tirage **sans remise**.
 - Score en kilomètres orthodromiques, récapitulatif, boutons de partage.
 
 ## Essayer en local
@@ -123,8 +129,8 @@ Identiques à GeoConf : *Settings → Pages → Source : GitHub Actions*, puis u
 
 | Paramètre | Effet | Exemple |
 |---|---|---|
-| `g` | Ensembles présélectionnés | `?g=amérique du sud` |
-| `n` | Nombre de clubs : `10`, `20`, `50`, `0` | `?n=20` |
+| `g` | Ensembles présélectionnés (`mix` pour le mix de pays) | `?g=afrique` |
+| `n` | Nombre de clubs : `10`, `20`, `50`, `100`, `0` | `?n=20` |
 | `share` | URL utilisée dans le texte de partage | `?share=https://exemple.fr/jeu` |
 
 ## Structure

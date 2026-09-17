@@ -5,8 +5,12 @@
   'use strict';
 
   var $ = function (id) { return document.getElementById(id); };
-  var COUNT_OPTIONS = [10, 20, 50, 0];   // 0 = tous
-  var HINTS_PER_GAME = 3;
+  var COUNT_OPTIONS = [10, 20, 50, 100, 0];   // 0 = tous
+
+  /** Un indice par tranche de dix clubs, plafonné à dix :
+      10 → 1, 20 → 2, 50 → 5, 100 → 10, et tout le paquet → 10. */
+  function hintsFor(rounds) { return Math.min(10, Math.max(1, Math.round(rounds / 10))); }
+  function plural(n, mot) { return n + ' ' + mot + (n > 1 ? 's' : ''); }
 
   /* Les paliers sont plus larges que sur un jeu européen : d'un continent à
      l'autre, se tromper de 1 000 km reste une approximation honorable. */
@@ -34,9 +38,9 @@
 
   var S = {
     clubs: [], groups: [], logos: {},
-    sel: {}, count: 10,
+    sel: {}, mix: false, count: 10,
     deck: [], idx: 0, results: [], guess: null, revealed: false, map: null,
-    hintsLeft: 0, hintUsed: false, hintsSpent: 0
+    hintsLeft: 0, hintsTotal: 0, hintUsed: false, hintsSpent: 0
   };
 
   /* ---------- utilitaires ---------- */
@@ -80,6 +84,7 @@
 
   /* ---------- écran d'accueil ---------- */
   function poolFor(sel) {
+    if (S.mix) return S.clubs;
     var on = Object.keys(sel).filter(function (k) { return sel[k]; });
     if (!on.length) return [];
     return S.clubs.filter(function (c) {
@@ -88,9 +93,44 @@
     });
   }
 
+  /** Tirage « Mix de pays » : on prend un club par pays avant d'en reprendre un
+      deuxième, pour qu'une partie courte traverse vraiment le monde au lieu de
+      rester en Angleterre et en Espagne, les mieux fournies. */
+  function diverseDeck(pool, n) {
+    var byCountry = {};
+    shuffle(pool.slice()).forEach(function (c) {
+      (byCountry[c.cc] = byCountry[c.cc] || []).push(c);
+    });
+    var countries = shuffle(Object.keys(byCountry)), out = [], pass = 0;
+    while (out.length < n) {
+      var added = false;
+      for (var i = 0; i < countries.length && out.length < n; i++) {
+        var list = byCountry[countries[i]];
+        if (list.length > pass) { out.push(list[pass]); added = true; }
+      }
+      if (!added) break;
+      pass++;
+    }
+    return shuffle(out);
+  }
+
   function renderGroups() {
     var box = $('group-chips');
     box.innerHTML = '';
+
+    var mix = document.createElement('button');
+    mix.type = 'button';
+    mix.className = 'chip chip-mix';
+    mix.dataset.mix = '1';
+    mix.innerHTML = '<span class="chip-main">Mix de pays</span>' +
+                    '<span class="chip-sub">' + S.countryCount + ' pays, un par un</span>';
+    mix.addEventListener('click', function () {
+      S.mix = !S.mix;
+      if (S.mix) S.groups.forEach(function (g) { S.sel[g.name] = false; });
+      syncHome();
+    });
+    box.appendChild(mix);
+
     S.groups.forEach(function (g) {
       var b = document.createElement('button');
       b.type = 'button';
@@ -98,7 +138,11 @@
       b.dataset.group = g.name;
       b.innerHTML = '<span class="chip-main">' + g.name + '</span>' +
                     '<span class="chip-sub">' + g.n + ' clubs</span>';
-      b.addEventListener('click', function () { S.sel[g.name] = !S.sel[g.name]; syncHome(); });
+      b.addEventListener('click', function () {
+        S.mix = false;                 // les continents et le mix s'excluent
+        S.sel[g.name] = !S.sel[g.name];
+        syncHome();
+      });
       box.appendChild(b);
     });
   }
@@ -112,7 +156,7 @@
       b.className = 'chip chip-num';
       b.dataset.count = n;
       b.innerHTML = '<span class="chip-main">' + (n || 'Tous') + '</span>' +
-                    '<span class="chip-sub">' + (n ? 'clubs' : 'le paquet complet') + '</span>';
+                    '<span class="chip-sub" data-hints></span>';
       b.addEventListener('click', function () { S.count = n; syncHome(); });
       box.appendChild(b);
     });
@@ -121,7 +165,8 @@
   function syncHome() {
     var n = poolFor(S.sel).length;
     Array.prototype.forEach.call($('group-chips').children, function (b) {
-      b.classList.toggle('is-on', !!S.sel[b.dataset.group]);
+      if (b.dataset.mix) b.classList.toggle('is-on', S.mix);
+      else b.classList.toggle('is-on', !S.mix && !!S.sel[b.dataset.group]);
     });
     Array.prototype.forEach.call($('count-chips').children, function (b) {
       var c = +b.dataset.count, tooBig = c > 0 && c > n;
@@ -130,31 +175,41 @@
       if (tooBig && c === S.count) S.count = 0;
     });
     Array.prototype.forEach.call($('count-chips').children, function (b) {
-      b.classList.toggle('is-on', +b.dataset.count === S.count);
+      var c = +b.dataset.count;
+      b.classList.toggle('is-on', c === S.count);
+      var r = c === 0 ? n : Math.min(c, n);
+      b.querySelector('[data-hints]').textContent = n ? plural(hintsFor(r), 'indice') : 'clubs';
     });
     var rounds = S.count === 0 ? n : Math.min(S.count, n);
     var picked = S.groups.filter(function (g) { return S.sel[g.name]; });
     $('pool-info').textContent = n ? n + ' clubs disponibles' : '—';
     $('btn-play').disabled = n === 0;
     $('cta-sub').textContent = n === 0 ? 'Choisissez au moins un ensemble'
-      : rounds + ' manche' + (rounds > 1 ? 's' : '') + ' · ' +
-        (picked.length === S.groups.length ? 'tout le monde'
-                                           : picked.map(function (g) { return g.name; }).join(' · '));
-    $('btn-all-groups').textContent = picked.length > 1 ? 'Tout décocher' : 'Tout mélanger';
+      : plural(rounds, 'manche') + ' · ' + plural(hintsFor(rounds), 'indice') + ' · ' +
+        (S.mix ? 'un club par pays'
+               : picked.length === S.groups.length ? 'tout le monde'
+               : picked.map(function (g) { return g.name; }).join(' · '));
+    $('btn-all-groups').textContent = (S.mix || picked.length) ? 'Tout décocher' : 'Tout mélanger';
   }
 
   function renderFacts() {
-    var countries = {}, east = null, west = null;
-    S.clubs.forEach(function (c) {
-      countries[c.cc] = 1;
-      if (!east || c.lon > east.lon) east = c;
-      if (!west || c.lon < west.lon) west = c;
-    });
-    var span = Math.round(window.geoUtil.haversine(west, east) / 100) * 100;
+    var countries = {};
+    S.clubs.forEach(function (c) { countries[c.cc] = 1; });
+
+    // La vraie distance maximale entre deux clubs, pas l'écart de longitude :
+    // avec l'Océanie dans le jeu, les deux ne disent pas du tout la même chose.
+    var far = 0, a = null, b = null;
+    for (var i = 0; i < S.clubs.length; i++)
+      for (var j = i + 1; j < S.clubs.length; j++) {
+        var d = window.geoUtil.haversine(S.clubs[i], S.clubs[j]);
+        if (d > far) { far = d; a = S.clubs[i]; b = S.clubs[j]; }
+      }
+    var span = Math.round(far / 100) * 100;
+
     $('home-facts').innerHTML = [
       ['⚽', S.clubs.length + ' clubs', 'des 5 grands championnats aux confins'],
-      ['🌍', Object.keys(countries).length + ' pays', 'sur quatre continents'],
-      ['📐', span.toLocaleString('fr-FR') + ' km', "d'un bout à l'autre du tableau"]
+      ['🌍', Object.keys(countries).length + ' pays', 'aux quatre coins du monde'],
+      ['📐', span.toLocaleString('fr-FR') + ' km', 'entre les deux clubs les plus éloignés']
     ].map(function (f) {
       return '<li><i>' + f[0] + '</i><b>' + f[1] + '</b><span>' + f[2] + '</span></li>';
     }).join('');
@@ -170,11 +225,12 @@
   }
 
   function startGame() {
-    var pool = shuffle(poolFor(S.sel).slice());
+    var pool = poolFor(S.sel);
     var n = S.count === 0 ? pool.length : Math.min(S.count, pool.length);
-    S.deck = pool.slice(0, n);       // tirage sans remise
+    S.deck = S.mix ? diverseDeck(pool, n) : shuffle(pool.slice()).slice(0, n);
     S.idx = 0; S.results = [];
-    S.hintsLeft = HINTS_PER_GAME; S.hintUsed = false; S.hintsSpent = 0;
+    S.hintsTotal = hintsFor(n); S.hintsLeft = S.hintsTotal;
+    S.hintUsed = false; S.hintsSpent = 0;
     show('scr-play');
     S.map.resize();
     nextRound();
@@ -293,8 +349,7 @@
     $('final-worst').innerHTML = fmtKm(sorted[sorted.length - 1].km) + ' km<small>' +
       sorted[sorted.length - 1].club.name + '</small>';
     $('final-rank').innerHTML = '<b>' + rank[1] + '</b><span>' + rank[2] +
-      (S.hintsSpent ? ' · ' + S.hintsSpent + ' indice' + (S.hintsSpent > 1 ? 's' : '') +
-                      ' sur ' + HINTS_PER_GAME
+      (S.hintsSpent ? ' · ' + plural(S.hintsSpent, 'indice') + ' sur ' + S.hintsTotal
                     : ' · aucun indice utilisé') + '</span>';
     $('final-squares').textContent = S.results.map(function (r) { return r.bucket.sq; }).join('');
 
@@ -316,14 +371,15 @@
 
   function buildShare(total, avg) {
     var picked = S.groups.filter(function (g) { return S.sel[g.name]; });
-    var eds = picked.length === S.groups.length ? 'le monde entier'
+    var eds = S.mix ? 'mix de pays'
+            : picked.length === S.groups.length ? 'le monde entier'
             : picked.map(function (g) { return g.name; }).join(' + ');
     var txt =
       '🌍 GeoClubs — le GeoGuessr du football mondial\n' +
       eds + ' · ' + S.results.length + ' clubs\n' +
       S.results.map(function (r) { return r.bucket.sq; }).join('') + '\n' +
       'Score : ' + fmtKm(total) + ' km (moy. ' + fmtKm(avg) + ' km/club)\n' +
-      (S.hintsSpent ? 'Indices : ' + S.hintsSpent + '/' + HINTS_PER_GAME + '\n'
+      (S.hintsSpent ? 'Indices : ' + S.hintsSpent + '/' + S.hintsTotal + '\n'
                     : 'Sans le moindre indice 😤\n') +
       '« ' + rankFor(avg)[1] + ' »\n';
     var url = shareURL();
@@ -405,13 +461,13 @@
       });
       S.groups = order.map(function (g) { return { name: g, n: count[g] }; });
 
+      S.countryCount = Object.keys(S.clubs.reduce(function (a, c) { a[c.cc] = 1; return a; }, {})).length;
+
+      // Rien n'est coché au départ : au joueur de composer sa partie.
       var q = new URLSearchParams(location.search);
       var preset = (q.get('g') || '').split(',').filter(Boolean).map(function (s) { return s.toLowerCase(); });
-      S.groups.forEach(function (g) {
-        S.sel[g.name] = preset.length ? preset.indexOf(g.name.toLowerCase()) >= 0 : true;
-      });
-      if (!Object.keys(S.sel).some(function (k) { return S.sel[k]; }))
-        S.groups.forEach(function (g) { S.sel[g.name] = true; });
+      S.groups.forEach(function (g) { S.sel[g.name] = preset.indexOf(g.name.toLowerCase()) >= 0; });
+      if (preset.indexOf('mix') >= 0) S.mix = true;
       var pn = parseInt(q.get('n'), 10);
       if (COUNT_OPTIONS.indexOf(pn) >= 0) S.count = pn;
 
@@ -460,7 +516,8 @@
     $('btn-again').addEventListener('click', startGame);
     $('btn-home').addEventListener('click', function () { show('scr-home'); syncHome(); });
     $('btn-all-groups').addEventListener('click', function () {
-      var on = S.groups.filter(function (g) { return S.sel[g.name]; }).length <= 1;
+      var on = !S.mix && S.groups.filter(function (g) { return S.sel[g.name]; }).length <= 1;
+      S.mix = false;
       S.groups.forEach(function (g) { S.sel[g.name] = on; });
       syncHome();
     });

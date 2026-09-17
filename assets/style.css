@@ -87,7 +87,19 @@ button{font:inherit;color:inherit}
   box-shadow:0 0 0 1px rgba(242,193,78,.22),0 10px 26px -16px rgba(242,193,78,.75)}
 .chip.is-on .chip-main{color:var(--gold-hi)}
 .chip.is-on .chip-sub{color:var(--gold-lo)}
+/* Le mix n'est pas un continent : on le distingue des autres cases. */
+.chip-mix{flex:1 1 100%;border-style:dashed}
+.chip-mix.is-on{border-style:solid}
+@media (min-width:620px){.chip-mix{flex:1 1 150px}}
+
 .chip-num{flex:1 1 0;min-width:78px;align-items:center;text-align:center}
+/* Cinq options ne tombent pas juste sur une ligne étroite : grille de trois,
+   la dernière occupant les deux colonnes restantes. */
+@media (max-width:620px){
+  #count-chips{display:grid;grid-template-columns:repeat(3,1fr)}
+  #count-chips .chip{min-width:0}
+  #count-chips .chip:last-child{grid-column:span 2}
+}
 
 .cta{width:100%;display:flex;flex-direction:column;align-items:center;gap:2px;padding:15px 20px;border:0;
   border-radius:14px;cursor:pointer;color:#04140C;font-family:var(--fd);font-weight:700;
