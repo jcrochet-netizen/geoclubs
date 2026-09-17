@@ -124,7 +124,7 @@
     mix.className = 'chip chip-mix';
     mix.dataset.mix = '1';
     mix.innerHTML = '<span class="chip-main">Mix de pays</span>' +
-                    '<span class="chip-sub">2 clubs max par pays du Big 5</span>';
+                    '<span class="chip-sub">' + S.clubs.length + ' clubs</span>';
     mix.addEventListener('click', function () {
       S.mix = !S.mix;
       if (S.mix) S.groups.forEach(function (g) { S.sel[g.name] = false; });
@@ -187,7 +187,7 @@
     $('btn-play').disabled = n === 0;
     $('cta-sub').textContent = n === 0 ? 'Choisissez au moins un ensemble'
       : plural(rounds, 'manche') + ' · ' + plural(hintsFor(rounds), 'indice') + ' · ' +
-        (S.mix ? 'au hasard, 2 max par pays du Big 5'
+        (S.mix ? 'mix de pays'
                : picked.length === S.groups.length ? 'tout le monde'
                : picked.map(function (g) { return g.name; }).join(' · '));
     $('btn-all-groups').textContent = (S.mix || picked.length) ? 'Tout décocher' : 'Tout mélanger';
@@ -468,8 +468,6 @@
         order = fromFile.concat(order.filter(function (g) { return fromFile.indexOf(g) < 0; }));
       }
       S.groups = order.map(function (g) { return { name: g, n: count[g] }; });
-
-      S.countryCount = Object.keys(S.clubs.reduce(function (a, c) { a[c.cc] = 1; return a; }, {})).length;
 
       // Rien n'est coché au départ : au joueur de composer sa partie.
       var q = new URLSearchParams(location.search);

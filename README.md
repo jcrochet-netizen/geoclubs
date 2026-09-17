@@ -24,6 +24,8 @@ carte mondiale.
 - Une case **« Mix de pays »** tire au hasard, mais **deux clubs au maximum par
   pays du Big 5**. Sans ce plafond, un tirage de 20 manches sort jusqu'à 5 clubs
   d'un même pays ; mesuré sur 120 tirages, le plafond n'est jamais dépassé.
+  Le plafond ne s'affiche nulle part dans le jeu : c'est un réglage d'équilibrage,
+  pas une information utile au joueur.
 - Rien n'est coché au départ : au joueur de composer sa partie.
 - Carte du monde **en Canvas**, zoom et déplacement à 60 images/seconde.
 - 10, 20, 50, 100 ou tous les clubs, tirage **sans remise**.
