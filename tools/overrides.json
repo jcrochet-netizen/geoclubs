@@ -1,0 +1,89 @@
+{
+  "_lisez_moi": "Corrections appliquées après la récupération Sportmonks, par identifiant de club (le slug du nom). Champs possibles : lat, lon, city, name, venue. Sert quand les données de stade de Sportmonks sont fausses ou absentes.",
+  "karpaty": {
+    "city": "Lviv",
+    "lat": 49.7986,
+    "lon": 23.9989,
+    "venue": "Stade Ukraïna"
+  },
+  "maccabi-tel-aviv": {
+    "city": "Tel Aviv",
+    "lat": 32.0519,
+    "lon": 34.7614,
+    "venue": "Bloomfield Stadium"
+  },
+  "lincoln-red-imps": {
+    "city": "Gibraltar",
+    "lat": 36.1486,
+    "lon": -5.3536,
+    "venue": "Victoria Stadium"
+  },
+  "america-de-cali": {
+    "city": "Cali",
+    "lat": 3.4262,
+    "lon": -76.5455,
+    "venue": "Estadio Pascual Guerrero"
+  },
+  "shakhtar-donetsk": {
+    "city": "Donetsk",
+    "lat": 48.0214,
+    "lon": 37.8097,
+    "venue": "Donbass Arena"
+  },
+  "penarol": {
+    "city": "Montevideo",
+    "lat": -34.8206,
+    "lon": -56.0206,
+    "venue": "Estadio Campeón del Siglo"
+  },
+  "independiente-petrolero": {
+    "city": "Sucre",
+    "lat": -19.0421,
+    "lon": -65.2559,
+    "venue": "Estadio Olímpico Patria"
+  },
+  "barcelona-guayaquil": {
+    "name": "Barcelona SC",
+    "city": "Guayaquil",
+    "lat": -2.1272,
+    "lon": -79.9236,
+    "venue": "Estadio Monumental"
+  },
+  "santa-fe": {
+    "name": "Independiente Santa Fe"
+  },
+  "universidad-chile": {
+    "name": "Universidad de Chile"
+  },
+  "cincinnati": {
+    "name": "FC Cincinnati",
+    "city": "Cincinnati",
+    "lat": 39.1116,
+    "lon": -84.5222,
+    "venue": "TQL Stadium"
+  },
+  "floriana": {
+    "city": "Floriana",
+    "lat": 35.8931,
+    "lon": 14.5057,
+    "venue": "Stade national de Ta' Qali"
+  },
+  "spartak-moskva": {
+    "name": "Spartak Moscou",
+    "city": "Moscou",
+    "lat": 55.8181,
+    "lon": 37.4403,
+    "venue": "Loukoil Arena"
+  },
+  "sporting-kc": {
+    "name": "Sporting Kansas City"
+  },
+  "san-diego": {
+    "name": "San Diego FC"
+  },
+  "new-york-rb": {
+    "name": "New York Red Bulls",
+    "city": "Harrison",
+    "venue": "Red Bull Arena"
+  }
+}

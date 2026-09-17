@@ -1,0 +1,245 @@
+# ══════════════════════════════════════════════════════════════════════════
+#  GeoClubs — la liste des clubs du jeu.
+#  ## Section   → le « groupe » des clubs suivants, qui sert de filtre au jeu
+#  @league ID   → tous les clubs de la ligue (saison en cours)
+#  Nom | Pays   → un club ; le pays fiabilise la recherche
+#  Nom #12345   → identifiant Sportmonks imposé, quand la recherche se trompe
+# ══════════════════════════════════════════════════════════════════════════
+
+## Les 5 grands championnats
+@league 301
+@league 384
+@league 8
+@league 564
+@league 82
+
+## Le reste de l'Europe
+
+# Pays-Bas
+Ajax | Netherlands
+PSV Eindhoven #682
+Feyenoord | Netherlands
+NEC Nijmegen | Netherlands
+Twente | Netherlands
+Groningen | Netherlands
+
+# Belgique
+Club Brugge | Belgium
+Anderlecht | Belgium
+Union Saint-Gilloise | Belgium
+
+# Suisse
+Young Boys | Switzerland
+Basel | Switzerland
+Servette | Switzerland
+Lugano | Switzerland
+
+# Autriche
+Austria Wien | Austria
+Rapid Wien | Austria
+RB Salzburg | Austria
+Sturm Graz | Austria
+
+# Pologne
+Wisla Krakow | Poland
+Legia Warszawa | Poland
+Lech Poznan | Poland
+
+# Portugal
+Benfica | Portugal
+Porto | Portugal
+Sporting CP | Portugal
+Braga | Portugal
+
+# Biélorussie
+Dinamo Brest | Belarus
+Dinamo Minsk | Belarus
+
+# Bosnie-Herzégovine
+Zrinjski | Bosnia and Herzegovina
+
+# Bulgarie
+Levski Sofia | Bulgaria
+Lokomotiv Plovdiv | Bulgaria
+
+# Caucase et Asie centrale
+Qarabag | Azerbaijan
+Noah | Armenia
+Dinamo Batumi | Georgia
+Kairat | Kazakhstan
+
+# Albanie, Kosovo, Macédoine, Monténégro, Saint-Marin
+Egnatia | Albania
+Prishtina | Kosovo
+Shkendija #876
+Sutjeska | Montenegro
+Tre Fiori | San Marino
+
+# Chypre, Grèce, Malte
+AEK Larnaca | Cyprus
+AEL Limassol #611
+AEK Athens | Greece
+Olympiacos | Greece
+Panathinaikos | Greece
+Floriana #762
+
+# Croatie, Serbie, Slovénie
+Dinamo Zagreb | Croatia
+Hajduk Split | Croatia
+Istra 1961 | Croatia
+Rijeka | Croatia
+Partizan | Serbia
+Crvena Zvezda | Serbia
+Cukaricki | Serbia
+Maribor | Slovenia
+
+# Danemark
+Brondby | Denmark
+FC Kobenhavn #85
+Midtjylland | Denmark
+Nordsjaelland | Denmark
+
+# Scandinavie et Islande
+Bodo/Glimt | Norway
+Brann | Norway
+Molde | Norway
+Rosenborg | Norway
+AIK | Sweden
+Djurgarden | Sweden
+Malmo FF | Sweden
+Mjallby | Sweden
+Hammarby | Sweden
+HJK | Finland
+Inter Turku | Finland
+KuPS #4323
+Vikingur Reykjavik | Iceland
+KI Klaksvik #5284
+NSI Runavik #8706
+
+# Îles Britanniques
+Aberdeen | Scotland
+Celtic | Scotland
+Rangers | Scotland
+Hibernian | Scotland
+Bohemians | Republic of Ireland
+Linfield | Northern Ireland
+Lincoln Red Imps | Gibraltar
+
+# Baltes
+Flora | Estonia
+RFS #6556
+Kauno Zalgiris | Lithuania
+
+# Luxembourg
+Differdange 03 | Luxembourg
+Dudelange | Luxembourg
+
+# Europe centrale
+Banik Ostrava | Czech Republic
+Sigma Olomouc | Czech Republic
+Slavia Praha | Czech Republic
+Sparta Praha | Czech Republic
+Debrecen | Hungary
+Ferencvaros | Hungary
+Slovan Bratislava | Slovakia
+Zilina | Slovakia
+
+# Roumanie, Moldavie
+FCSB | Romania
+Universitatea Cluj | Romania
+Sheriff Tiraspol | Moldova
+
+# Russie
+CSKA Moscow | Russia
+Krasnodar | Russia
+Spartak Moscow #2712
+Rubin Kazan | Russia
+
+# Turquie
+Besiktas | Turkey
+Fenerbahce | Turkey
+Galatasaray | Turkey
+Trabzonspor | Turkey
+
+# Ukraine
+Dynamo Kyiv | Ukraine
+Shakhtar Donetsk | Ukraine
+Karpaty Lviv | Ukraine
+Metalist 1925 | Ukraine
+
+# Israël
+Hapoel Beer Sheva | Israel
+Maccabi Tel Aviv | Israel
+
+## Amérique du Sud
+
+# Brésil
+Sao Paulo | Brazil
+Corinthians | Brazil
+Santos | Brazil
+Cruzeiro | Brazil
+Flamengo | Brazil
+Fluminense | Brazil
+
+# Argentine
+River Plate | Argentina
+Boca Juniors | Argentina
+Estudiantes | Argentina
+Rosario Central | Argentina
+Racing Club | Argentina
+Newell's Old Boys | Argentina
+
+# Uruguay
+Boston River | Uruguay
+Cerro Largo | Uruguay
+Nacional | Uruguay
+Penarol | Uruguay
+Danubio | Uruguay
+
+# Bolivie
+Independiente Petrolero | Bolivia
+Always Ready | Bolivia
+
+# Chili
+O'Higgins | Chile
+Universidad Catolica | Chile
+Universidad de Chile | Chile
+
+# Colombie
+America de Cali | Colombia
+Deportivo Cali | Colombia
+Independiente Medellin | Colombia
+Independiente Santa Fe #12506
+
+# Équateur
+Barcelona SC | Ecuador
+Independiente del Valle | Ecuador
+
+# Paraguay
+2 de Mayo | Paraguay
+Cerro Porteno | Paraguay
+
+# Pérou
+Alianza Lima | Peru
+
+# Venezuela
+Metropolitanos | Venezuela
+
+## Amérique du Nord
+
+# États-Unis
+Los Angeles FC | United States
+New York Red Bulls #383
+Sporting Kansas City #323
+Inter Miami | United States
+San Diego FC | United States
+Orlando City | United States
+Atlanta United | United States
+Seattle Sounders | United States
+FC Cincinnati #3636
+
+# Mexique
+Tigres UANL | Mexico
+Monterrey | Mexico
+Guadalajara | Mexico
+Cruz Azul | Mexico

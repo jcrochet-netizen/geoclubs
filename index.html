@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GeoClubs — Le GeoGuessr du football mondial</title>
+<meta name="description" content="Placez les clubs de football sur une carte du monde. Des cinq grands championnats à Bodø, Almaty, Guayaquil ou Rrogozhinë. Chaque kilomètre d'écart compte.">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="GeoClubs — Le GeoGuessr du football mondial">
+<meta property="og:description" content="249 clubs, 65 pays, une carte du monde. Sauriez-vous placer Peñarol, le Kauno Žalgiris ou les Lincoln Red Imps ?">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app" id="app">
+
+  <!-- ══════════ ACCUEIL ══════════ -->
+  <section class="screen is-active" id="scr-home">
+    <div class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <h1 class="title">Le GeoGuessr<br><em>du football</em></h1>
+      <p class="tagline">Des cinq grands championnats à Rrogozhinë, Almaty et Guayaquil.</p>
+      <p class="lede">On vous donne un club. Vous le placez sur la carte du monde. Chaque kilomètre d'écart vous coûte un point&nbsp;— <strong>le meilleur score est le plus petit</strong>.</p>
+      <ul class="facts" id="home-facts"></ul>
+    </div>
+
+    <div class="setup">
+      <div class="field">
+        <div class="field-head">
+          <h2>Sélection</h2>
+          <p class="field-note">— Choisis les ensembles à mettre dans le jeu.</p>
+          <button class="link-btn" id="btn-all-groups" type="button">Tout mélanger</button>
+        </div>
+        <div class="chips" id="group-chips"></div>
+      </div>
+
+      <div class="field">
+        <div class="field-head">
+          <h2>Nombre de clubs</h2>
+          <span class="pool-info" id="pool-info"></span>
+        </div>
+        <div class="chips" id="count-chips"></div>
+      </div>
+
+      <button class="cta" id="btn-play" type="button">
+        <span class="cta-label">Lancer la partie</span>
+        <span class="cta-sub" id="cta-sub"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ══════════ JEU ══════════ -->
+  <section class="screen" id="scr-play">
+    <div class="hud">
+      <div class="hud-club">
+        <div class="crest" id="crest"></div>
+        <div class="hud-id">
+          <h2 class="club-name" id="club-name">—</h2>
+          <p class="club-meta" id="club-meta"></p>
+        </div>
+      </div>
+      <div class="hud-score">
+        <div class="stat"><span class="stat-k">Manche</span><b id="stat-round">1<i>/10</i></b></div>
+        <div class="stat"><span class="stat-k">Score</span><b id="stat-score">0<i> km</i></b></div>
+      </div>
+      <div class="progress"><span id="progress-bar"></span></div>
+    </div>
+
+    <div class="map-wrap" id="map-wrap">
+      <div class="map" id="map" role="application" aria-label="Carte du monde — cliquez pour placer votre pronostic"></div>
+      <div class="map-tools">
+        <button type="button" id="zoom-in" aria-label="Zoomer">+</button>
+        <button type="button" id="zoom-out" aria-label="Dézoomer">−</button>
+        <button type="button" id="zoom-reset" aria-label="Recentrer la carte">⤢</button>
+      </div>
+      <p class="map-hint" id="map-hint">Cliquez sur la carte pour placer votre pronostic</p>
+    </div>
+
+    <div class="actionbar" id="actionbar">
+      <button class="hint-btn" id="btn-hint" type="button">
+        <span class="hint-ico" aria-hidden="true">?</span>
+        <span class="hint-txt">Indice</span>
+        <b id="hint-left">3</b>
+      </button>
+      <div class="verdict" id="verdict" hidden>
+        <div class="verdict-main">
+          <b id="verdict-dist">—</b>
+          <span class="badge" id="verdict-badge">—</span>
+        </div>
+        <p class="verdict-sub" id="verdict-sub"></p>
+      </div>
+      <button class="cta cta-sm" id="btn-guess" type="button" disabled>Valider</button>
+      <button class="cta cta-sm" id="btn-next" type="button" hidden>Suivant</button>
+    </div>
+  </section>
+
+  <!-- ══════════ FIN ══════════ -->
+  <section class="screen" id="scr-end">
+    <div class="final">
+      <p class="kicker"><span class="dot"></span> Partie terminée</p>
+      <div class="final-score"><b id="final-total">—</b><span>km cumulés</span></div>
+      <p class="final-rank" id="final-rank"></p>
+      <div class="final-grid">
+        <div><span>Moyenne</span><b id="final-avg">—</b></div>
+        <div><span>Meilleur</span><b id="final-best">—</b></div>
+        <div><span>Pire</span><b id="final-worst">—</b></div>
+      </div>
+      <div class="squares" id="final-squares"></div>
+    </div>
+
+    <details class="recap" id="recap">
+      <summary>Le détail manche par manche</summary>
+      <ol class="recap-list" id="recap-list"></ol>
+    </details>
+
+    <div class="share">
+      <h2>Partager le score</h2>
+      <div class="share-btns">
+        <button type="button" class="sh sh-copy" id="sh-copy">Copier le score</button>
+        <button type="button" class="sh sh-native" id="sh-native" hidden>Partager…</button>
+        <a class="sh sh-x" id="sh-x" target="_blank" rel="noopener">X / Twitter</a>
+        <a class="sh sh-wa" id="sh-wa" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="sh sh-bs" id="sh-bs" target="_blank" rel="noopener">Bluesky</a>
+        <a class="sh sh-fb" id="sh-fb" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <pre class="share-preview" id="share-preview"></pre>
+    </div>
+
+    <div class="again">
+      <button class="cta" id="btn-again" type="button">Rejouer</button>
+      <button class="link-btn" id="btn-home" type="button">Changer les réglages</button>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <a href="#" id="foot-link" target="_blank" rel="noopener">Le jeu</a>
+  </footer>
+</div>
+
+<script src="assets/map.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

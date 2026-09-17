@@ -1,0 +1,2243 @@
+[
+ {
+  "id": "olympique-marseille",
+  "club": "Olympique Marseille",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Marseille",
+  "confiance": "ligue"
+ },
+ {
+  "id": "losc-lille",
+  "club": "LOSC Lille",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Villeneuve d'Ascq",
+  "confiance": "ligue"
+ },
+ {
+  "id": "rennes",
+  "club": "Rennes",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Rennes",
+  "confiance": "ligue"
+ },
+ {
+  "id": "monaco",
+  "club": "Monaco",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Monaco",
+  "ville": "Monaco",
+  "confiance": "ligue"
+ },
+ {
+  "id": "le-havre",
+  "club": "Le Havre",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Le Havre",
+  "confiance": "ligue"
+ },
+ {
+  "id": "angers-sco",
+  "club": "Angers SCO",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Angers",
+  "confiance": "ligue"
+ },
+ {
+  "id": "troyes",
+  "club": "Troyes",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Troyes",
+  "confiance": "ligue"
+ },
+ {
+  "id": "strasbourg",
+  "club": "Strasbourg",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Strasbourg",
+  "confiance": "ligue"
+ },
+ {
+  "id": "paris-saint-germain",
+  "club": "Paris Saint Germain",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Paris",
+  "confiance": "ligue"
+ },
+ {
+  "id": "lens",
+  "club": "Lens",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Lens",
+  "confiance": "ligue"
+ },
+ {
+  "id": "toulouse",
+  "club": "Toulouse",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Toulouse",
+  "confiance": "ligue"
+ },
+ {
+  "id": "brest",
+  "club": "Brest",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Brest",
+  "confiance": "ligue"
+ },
+ {
+  "id": "lorient",
+  "club": "Lorient",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Lorient",
+  "confiance": "ligue"
+ },
+ {
+  "id": "le-mans",
+  "club": "Le Mans",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Le Mans",
+  "confiance": "ligue"
+ },
+ {
+  "id": "nice",
+  "club": "Nice",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Nice",
+  "confiance": "ligue"
+ },
+ {
+  "id": "auxerre",
+  "club": "Auxerre",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Auxerre",
+  "confiance": "ligue"
+ },
+ {
+  "id": "paris",
+  "club": "Paris",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Paris",
+  "confiance": "ligue"
+ },
+ {
+  "id": "olympique-lyonnais",
+  "club": "Olympique Lyonnais",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "France",
+  "ville": "Décines-Charpieu",
+  "confiance": "ligue"
+ },
+ {
+  "id": "monza",
+  "club": "Monza",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Monza",
+  "confiance": "ligue"
+ },
+ {
+  "id": "atalanta",
+  "club": "Atalanta",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Bergamo",
+  "confiance": "ligue"
+ },
+ {
+  "id": "udinese",
+  "club": "Udinese",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Udine",
+  "confiance": "ligue"
+ },
+ {
+  "id": "venezia",
+  "club": "Venezia",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Venezia",
+  "confiance": "ligue"
+ },
+ {
+  "id": "ac-milan",
+  "club": "AC Milan",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Milano",
+  "confiance": "ligue"
+ },
+ {
+  "id": "genoa",
+  "club": "Genoa",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Genova",
+  "confiance": "ligue"
+ },
+ {
+  "id": "fiorentina",
+  "club": "Fiorentina",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Firenze",
+  "confiance": "ligue"
+ },
+ {
+  "id": "lazio",
+  "club": "Lazio",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Roma",
+  "confiance": "ligue"
+ },
+ {
+  "id": "roma",
+  "club": "Roma",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Roma",
+  "confiance": "ligue"
+ },
+ {
+  "id": "frosinone",
+  "club": "Frosinone",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Frosinone",
+  "confiance": "ligue"
+ },
+ {
+  "id": "torino",
+  "club": "Torino",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Torino",
+  "confiance": "ligue"
+ },
+ {
+  "id": "como",
+  "club": "Como",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Como",
+  "confiance": "ligue"
+ },
+ {
+  "id": "lecce",
+  "club": "Lecce",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Lecce",
+  "confiance": "ligue"
+ },
+ {
+  "id": "bologna",
+  "club": "Bologna",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Bologna",
+  "confiance": "ligue"
+ },
+ {
+  "id": "sassuolo",
+  "club": "Sassuolo",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Reggio Emilia",
+  "confiance": "ligue"
+ },
+ {
+  "id": "napoli",
+  "club": "Napoli",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Napoli",
+  "confiance": "ligue"
+ },
+ {
+  "id": "parma",
+  "club": "Parma",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Parma",
+  "confiance": "ligue"
+ },
+ {
+  "id": "inter",
+  "club": "Inter",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Milano",
+  "confiance": "ligue"
+ },
+ {
+  "id": "juventus",
+  "club": "Juventus",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Torino",
+  "confiance": "ligue"
+ },
+ {
+  "id": "cagliari",
+  "club": "Cagliari",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Italie",
+  "ville": "Cagliari",
+  "confiance": "ligue"
+ },
+ {
+  "id": "brighton-hove-albion",
+  "club": "Brighton & Hove Albion",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Falmer",
+  "confiance": "ligue"
+ },
+ {
+  "id": "fulham",
+  "club": "Fulham",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "London",
+  "confiance": "ligue"
+ },
+ {
+  "id": "liverpool",
+  "club": "Liverpool",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Liverpool",
+  "confiance": "ligue"
+ },
+ {
+  "id": "arsenal",
+  "club": "Arsenal",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "London",
+  "confiance": "ligue"
+ },
+ {
+  "id": "ipswich-town",
+  "club": "Ipswich Town",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Ipswich",
+  "confiance": "ligue"
+ },
+ {
+  "id": "coventry-city",
+  "club": "Coventry City",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Coventry",
+  "confiance": "ligue"
+ },
+ {
+  "id": "leeds-united",
+  "club": "Leeds United",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Leeds",
+  "confiance": "ligue"
+ },
+ {
+  "id": "crystal-palace",
+  "club": "Crystal Palace",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "London",
+  "confiance": "ligue"
+ },
+ {
+  "id": "manchester-united",
+  "club": "Manchester United",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Manchester",
+  "confiance": "ligue"
+ },
+ {
+  "id": "brentford",
+  "club": "Brentford",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Brentford",
+  "confiance": "ligue"
+ },
+ {
+  "id": "sunderland",
+  "club": "Sunderland",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Sunderland",
+  "confiance": "ligue"
+ },
+ {
+  "id": "afc-bournemouth",
+  "club": "AFC Bournemouth",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Bournemouth",
+  "confiance": "ligue"
+ },
+ {
+  "id": "hull-city",
+  "club": "Hull City",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Hull",
+  "confiance": "ligue"
+ },
+ {
+  "id": "newcastle-united",
+  "club": "Newcastle United",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Newcastle upon Tyne",
+  "confiance": "ligue"
+ },
+ {
+  "id": "nottingham-forest",
+  "club": "Nottingham Forest",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Nottingham",
+  "confiance": "ligue"
+ },
+ {
+  "id": "everton",
+  "club": "Everton",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Liverpool",
+  "confiance": "ligue"
+ },
+ {
+  "id": "manchester-city",
+  "club": "Manchester City",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Manchester",
+  "confiance": "ligue"
+ },
+ {
+  "id": "chelsea",
+  "club": "Chelsea",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "London",
+  "confiance": "ligue"
+ },
+ {
+  "id": "aston-villa",
+  "club": "Aston Villa",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "Birmingham",
+  "confiance": "ligue"
+ },
+ {
+  "id": "tottenham-hotspur",
+  "club": "Tottenham Hotspur",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Angleterre",
+  "ville": "London",
+  "confiance": "ligue"
+ },
+ {
+  "id": "villarreal",
+  "club": "Villarreal",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Villarreal",
+  "confiance": "ligue"
+ },
+ {
+  "id": "real-madrid",
+  "club": "Real Madrid",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Madrid",
+  "confiance": "ligue"
+ },
+ {
+  "id": "real-betis",
+  "club": "Real Betis",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Sevilla",
+  "confiance": "ligue"
+ },
+ {
+  "id": "deportivo-a-coruna",
+  "club": "Deportivo A Coruña",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "La Coruña",
+  "confiance": "ligue"
+ },
+ {
+  "id": "celta-de-vigo",
+  "club": "Celta de Vigo",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Vigo",
+  "confiance": "ligue"
+ },
+ {
+  "id": "levante",
+  "club": "Levante",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Valencia",
+  "confiance": "ligue"
+ },
+ {
+  "id": "elche",
+  "club": "Elche",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Elche",
+  "confiance": "ligue"
+ },
+ {
+  "id": "racing-santander",
+  "club": "Racing Santander",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Santander",
+  "confiance": "ligue"
+ },
+ {
+  "id": "sevilla",
+  "club": "Sevilla",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Sevilla",
+  "confiance": "ligue"
+ },
+ {
+  "id": "fc-barcelona",
+  "club": "FC Barcelona",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Barcelona",
+  "confiance": "ligue"
+ },
+ {
+  "id": "deportivo-alaves",
+  "club": "Deportivo Alavés",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Gasteiz",
+  "confiance": "ligue"
+ },
+ {
+  "id": "real-sociedad",
+  "club": "Real Sociedad",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "San Sebastián",
+  "confiance": "ligue"
+ },
+ {
+  "id": "valencia",
+  "club": "Valencia",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Valencia",
+  "confiance": "ligue"
+ },
+ {
+  "id": "atletico-de-madrid",
+  "club": "Atlético de Madrid",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Madrid",
+  "confiance": "ligue"
+ },
+ {
+  "id": "getafe",
+  "club": "Getafe",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Getafe",
+  "confiance": "ligue"
+ },
+ {
+  "id": "athletic-club",
+  "club": "Athletic Club",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Bilbao",
+  "confiance": "ligue"
+ },
+ {
+  "id": "espanyol",
+  "club": "Espanyol",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Cornella de Llobregat",
+  "confiance": "ligue"
+ },
+ {
+  "id": "osasuna",
+  "club": "Osasuna",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Pamplona",
+  "confiance": "ligue"
+ },
+ {
+  "id": "rayo-vallecano",
+  "club": "Rayo Vallecano",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Madrid",
+  "confiance": "ligue"
+ },
+ {
+  "id": "malaga",
+  "club": "Málaga",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Espagne",
+  "ville": "Málaga",
+  "confiance": "ligue"
+ },
+ {
+  "id": "bayer-04-leverkusen",
+  "club": "Bayer 04 Leverkusen",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Leverkusen",
+  "confiance": "ligue"
+ },
+ {
+  "id": "sc-freiburg",
+  "club": "SC Freiburg",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Freiburg im Breisgau",
+  "confiance": "ligue"
+ },
+ {
+  "id": "borussia-dortmund",
+  "club": "Borussia Dortmund",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Dortmund",
+  "confiance": "ligue"
+ },
+ {
+  "id": "werder-bremen",
+  "club": "Werder Bremen",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Bremen",
+  "confiance": "ligue"
+ },
+ {
+  "id": "fc-koln",
+  "club": "FC Köln",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Cologne",
+  "confiance": "ligue"
+ },
+ {
+  "id": "schalke-04",
+  "club": "Schalke 04",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Gelsenkirchen",
+  "confiance": "ligue"
+ },
+ {
+  "id": "elversberg",
+  "club": "Elversberg",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Spiesen-Elversberg",
+  "confiance": "ligue"
+ },
+ {
+  "id": "rb-leipzig",
+  "club": "RB Leipzig",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Leipzig",
+  "confiance": "ligue"
+ },
+ {
+  "id": "fc-augsburg",
+  "club": "FC Augsburg",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Augsburg",
+  "confiance": "ligue"
+ },
+ {
+  "id": "borussia-monchengladbach",
+  "club": "Borussia Mönchengladbach",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Mönchengladbach",
+  "confiance": "ligue"
+ },
+ {
+  "id": "vfb-stuttgart",
+  "club": "VfB Stuttgart",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Stuttgart",
+  "confiance": "ligue"
+ },
+ {
+  "id": "paderborn",
+  "club": "Paderborn",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Paderborn",
+  "confiance": "ligue"
+ },
+ {
+  "id": "tsg-hoffenheim",
+  "club": "TSG Hoffenheim",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Sinsheim",
+  "confiance": "ligue"
+ },
+ {
+  "id": "eintracht-frankfurt",
+  "club": "Eintracht Frankfurt",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Frankfurt am Main",
+  "confiance": "ligue"
+ },
+ {
+  "id": "fsv-mainz-05",
+  "club": "FSV Mainz 05",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Mainz",
+  "confiance": "ligue"
+ },
+ {
+  "id": "fc-bayern-munchen",
+  "club": "FC Bayern München",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Munich",
+  "confiance": "ligue"
+ },
+ {
+  "id": "hamburger-sv",
+  "club": "Hamburger SV",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Hamburg",
+  "confiance": "ligue"
+ },
+ {
+  "id": "fc-union-berlin",
+  "club": "FC Union Berlin",
+  "cherche": null,
+  "groupe": "Les 5 grands championnats",
+  "pays": "Allemagne",
+  "ville": "Berlin",
+  "confiance": "ligue"
+ },
+ {
+  "id": "ajax",
+  "club": "Ajax",
+  "cherche": "Ajax",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Pays-Bas",
+  "ville": "Amsterdam",
+  "confiance": "sûr"
+ },
+ {
+  "id": "psv",
+  "club": "PSV",
+  "cherche": "PSV Eindhoven",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Pays-Bas",
+  "ville": "Eindhoven",
+  "confiance": "imposé"
+ },
+ {
+  "id": "feyenoord",
+  "club": "Feyenoord",
+  "cherche": "Feyenoord",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Pays-Bas",
+  "ville": "Rotterdam",
+  "confiance": "sûr"
+ },
+ {
+  "id": "nec-nijmegen",
+  "club": "NEC Nijmegen",
+  "cherche": "NEC Nijmegen",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Pays-Bas",
+  "ville": "Nijmegen",
+  "confiance": "sûr"
+ },
+ {
+  "id": "fc-twente",
+  "club": "FC Twente",
+  "cherche": "Twente",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Pays-Bas",
+  "ville": "Enschede",
+  "confiance": "sûr"
+ },
+ {
+  "id": "fc-groningen",
+  "club": "FC Groningen",
+  "cherche": "Groningen",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Pays-Bas",
+  "ville": "Groningen",
+  "confiance": "sûr"
+ },
+ {
+  "id": "club-brugge",
+  "club": "Club Brugge",
+  "cherche": "Club Brugge",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Belgique",
+  "ville": "Brugge",
+  "confiance": "sûr"
+ },
+ {
+  "id": "anderlecht",
+  "club": "Anderlecht",
+  "cherche": "Anderlecht",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Belgique",
+  "ville": "Brussels",
+  "confiance": "sûr"
+ },
+ {
+  "id": "union-saint-gilloise",
+  "club": "Union Saint-Gilloise",
+  "cherche": "Union Saint-Gilloise",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Belgique",
+  "ville": "Brussels",
+  "confiance": "sûr"
+ },
+ {
+  "id": "young-boys",
+  "club": "Young Boys",
+  "cherche": "Young Boys",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Suisse",
+  "ville": "Bern",
+  "confiance": "sûr"
+ },
+ {
+  "id": "basel",
+  "club": "Basel",
+  "cherche": "Basel",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Suisse",
+  "ville": "Basel",
+  "confiance": "sûr"
+ },
+ {
+  "id": "servette",
+  "club": "Servette",
+  "cherche": "Servette",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Suisse",
+  "ville": "Carouge",
+  "confiance": "sûr"
+ },
+ {
+  "id": "lugano",
+  "club": "Lugano",
+  "cherche": "Lugano",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Suisse",
+  "ville": "Lugano",
+  "confiance": "sûr"
+ },
+ {
+  "id": "austria-wien",
+  "club": "Austria Wien",
+  "cherche": "Austria Wien",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Autriche",
+  "ville": "Wien",
+  "confiance": "sûr"
+ },
+ {
+  "id": "sk-rapid",
+  "club": "SK Rapid",
+  "cherche": "Rapid Wien",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Autriche",
+  "ville": "Wien",
+  "confiance": "sûr"
+ },
+ {
+  "id": "salzburg",
+  "club": "Salzburg",
+  "cherche": "RB Salzburg",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Autriche",
+  "ville": "Wals-Siezenheim",
+  "confiance": "probable"
+ },
+ {
+  "id": "sturm-graz",
+  "club": "Sturm Graz",
+  "cherche": "Sturm Graz",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Autriche",
+  "ville": "Graz",
+  "confiance": "sûr"
+ },
+ {
+  "id": "wisla-krakow",
+  "club": "Wisła Kraków",
+  "cherche": "Wisla Krakow",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Pologne",
+  "ville": "Kraków",
+  "confiance": "sûr"
+ },
+ {
+  "id": "legia-warszawa",
+  "club": "Legia Warszawa",
+  "cherche": "Legia Warszawa",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Pologne",
+  "ville": "Warszawa",
+  "confiance": "sûr"
+ },
+ {
+  "id": "lech-poznan",
+  "club": "Lech Poznań",
+  "cherche": "Lech Poznan",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Pologne",
+  "ville": "Poznań",
+  "confiance": "sûr"
+ },
+ {
+  "id": "benfica",
+  "club": "Benfica",
+  "cherche": "Benfica",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Portugal",
+  "ville": "Lisboa",
+  "confiance": "sûr"
+ },
+ {
+  "id": "porto",
+  "club": "Porto",
+  "cherche": "Porto",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Portugal",
+  "ville": "Porto",
+  "confiance": "sûr"
+ },
+ {
+  "id": "sporting-cp",
+  "club": "Sporting CP",
+  "cherche": "Sporting CP",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Portugal",
+  "ville": "Lisboa",
+  "confiance": "sûr"
+ },
+ {
+  "id": "braganca",
+  "club": "Bragança",
+  "cherche": "Braga",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Portugal",
+  "ville": "Bragança",
+  "confiance": "sûr"
+ },
+ {
+  "id": "dinamo-brest",
+  "club": "Dinamo Brest",
+  "cherche": "Dinamo Brest",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Biélorussie",
+  "ville": "Brest",
+  "confiance": "sûr"
+ },
+ {
+  "id": "dinamo-minsk",
+  "club": "Dinamo Minsk",
+  "cherche": "Dinamo Minsk",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Biélorussie",
+  "ville": "Minsk",
+  "confiance": "sûr"
+ },
+ {
+  "id": "zrinjski",
+  "club": "Zrinjski",
+  "cherche": "Zrinjski",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Bosnie-Herzégovine",
+  "ville": "Mostar",
+  "confiance": "sûr"
+ },
+ {
+  "id": "levski-sofia",
+  "club": "Levski Sofia",
+  "cherche": "Levski Sofia",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Bulgarie",
+  "ville": "Sofia",
+  "confiance": "sûr"
+ },
+ {
+  "id": "lokomotiv-plovdiv",
+  "club": "Lokomotiv Plovdiv",
+  "cherche": "Lokomotiv Plovdiv",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Bulgarie",
+  "ville": "Bulgaria",
+  "confiance": "sûr"
+ },
+ {
+  "id": "qarabag",
+  "club": "Qarabağ",
+  "cherche": "Qarabag",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Azerbaïdjan",
+  "ville": "Baku",
+  "confiance": "sûr"
+ },
+ {
+  "id": "noah",
+  "club": "Noah",
+  "cherche": "Noah",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Arménie",
+  "ville": "Yerevan",
+  "confiance": "sûr"
+ },
+ {
+  "id": "dinamo-batumi",
+  "club": "Dinamo Batumi",
+  "cherche": "Dinamo Batumi",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Géorgie",
+  "ville": "Kobuleti",
+  "confiance": "sûr"
+ },
+ {
+  "id": "kairat",
+  "club": "Kairat",
+  "cherche": "Kairat",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Kazakhstan",
+  "ville": "Karatau",
+  "confiance": "sûr"
+ },
+ {
+  "id": "egnatia-rrogozhine",
+  "club": "Egnatia Rrogozhinë",
+  "cherche": "Egnatia",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Albanie",
+  "ville": "Rrogozhinë",
+  "confiance": "sûr"
+ },
+ {
+  "id": "prishtina",
+  "club": "Prishtina",
+  "cherche": "Prishtina",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Kosovo",
+  "ville": "Pristina",
+  "confiance": "sûr"
+ },
+ {
+  "id": "skendija-79",
+  "club": "Skendija 79",
+  "cherche": "Shkendija",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Macédoine du Nord",
+  "ville": "Foča",
+  "confiance": "imposé"
+ },
+ {
+  "id": "sutjeska",
+  "club": "Sutjeska",
+  "cherche": "Sutjeska",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Monténégro",
+  "ville": "Nikšić",
+  "confiance": "sûr"
+ },
+ {
+  "id": "tre-fiori",
+  "club": "Tre Fiori",
+  "cherche": "Tre Fiori",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Saint-Marin",
+  "ville": "Fiorentino",
+  "confiance": "sûr"
+ },
+ {
+  "id": "aek-larnaca",
+  "club": "AEK Larnaca",
+  "cherche": "AEK Larnaca",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Chypre",
+  "ville": "Larnaca",
+  "confiance": "sûr"
+ },
+ {
+  "id": "ael",
+  "club": "AEL",
+  "cherche": "AEL Limassol",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Chypre",
+  "ville": "Limassol",
+  "confiance": "imposé"
+ },
+ {
+  "id": "aek-athens",
+  "club": "AEK Athens",
+  "cherche": "AEK Athens",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Grèce",
+  "ville": "Athens",
+  "confiance": "sûr"
+ },
+ {
+  "id": "olympiacos-fc",
+  "club": "Olympiacos F.C.",
+  "cherche": "Olympiacos",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Grèce",
+  "ville": "Piraeus",
+  "confiance": "sûr"
+ },
+ {
+  "id": "panathinaikos",
+  "club": "Panathinaikos",
+  "cherche": "Panathinaikos",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Grèce",
+  "ville": "Athens",
+  "confiance": "sûr"
+ },
+ {
+  "id": "floriana",
+  "club": "Floriana",
+  "cherche": "Floriana",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Malte",
+  "ville": "Floriana",
+  "confiance": "imposé"
+ },
+ {
+  "id": "dinamo-zagreb",
+  "club": "Dinamo Zagreb",
+  "cherche": "Dinamo Zagreb",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Croatie",
+  "ville": "Zagreb",
+  "confiance": "sûr"
+ },
+ {
+  "id": "hajduk-split",
+  "club": "Hajduk Split",
+  "cherche": "Hajduk Split",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Croatie",
+  "ville": "Split",
+  "confiance": "sûr"
+ },
+ {
+  "id": "istra-1961",
+  "club": "Istra 1961",
+  "cherche": "Istra 1961",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Croatie",
+  "ville": "Pula",
+  "confiance": "sûr"
+ },
+ {
+  "id": "rijeka",
+  "club": "Rijeka",
+  "cherche": "Rijeka",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Croatie",
+  "ville": "Rijeka",
+  "confiance": "sûr"
+ },
+ {
+  "id": "partizan",
+  "club": "Partizan",
+  "cherche": "Partizan",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Serbie",
+  "ville": "Beograd",
+  "confiance": "sûr"
+ },
+ {
+  "id": "crvena-zvezda",
+  "club": "Crvena Zvezda",
+  "cherche": "Crvena Zvezda",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Serbie",
+  "ville": "Beograd",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cukaricki",
+  "club": "Čukarički",
+  "cherche": "Cukaricki",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Serbie",
+  "ville": "Beograd",
+  "confiance": "sûr"
+ },
+ {
+  "id": "maribor",
+  "club": "Maribor",
+  "cherche": "Maribor",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Slovénie",
+  "ville": "Maribor",
+  "confiance": "sûr"
+ },
+ {
+  "id": "brondby-if",
+  "club": "Brøndby IF",
+  "cherche": "Brondby",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Danemark",
+  "ville": "Brøndby",
+  "confiance": "sûr"
+ },
+ {
+  "id": "fc-kobenhavn",
+  "club": "FC København",
+  "cherche": "FC Kobenhavn",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Danemark",
+  "ville": "København",
+  "confiance": "imposé"
+ },
+ {
+  "id": "fc-midtjylland",
+  "club": "FC Midtjylland",
+  "cherche": "Midtjylland",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Danemark",
+  "ville": "Herning",
+  "confiance": "sûr"
+ },
+ {
+  "id": "nordsjaelland",
+  "club": "Nordsjælland",
+  "cherche": "Nordsjaelland",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Danemark",
+  "ville": "Farum",
+  "confiance": "sûr"
+ },
+ {
+  "id": "bodo-glimt",
+  "club": "Bodø / Glimt",
+  "cherche": "Bodo/Glimt",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Norvège",
+  "ville": "Bodø",
+  "confiance": "sûr"
+ },
+ {
+  "id": "brann",
+  "club": "Brann",
+  "cherche": "Brann",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Norvège",
+  "ville": "Bergen",
+  "confiance": "sûr"
+ },
+ {
+  "id": "molde",
+  "club": "Molde",
+  "cherche": "Molde",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Norvège",
+  "ville": "Molde",
+  "confiance": "sûr"
+ },
+ {
+  "id": "rosenborg",
+  "club": "Rosenborg",
+  "cherche": "Rosenborg",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Norvège",
+  "ville": "Trondheim",
+  "confiance": "sûr"
+ },
+ {
+  "id": "aik",
+  "club": "AIK",
+  "cherche": "AIK",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Suède",
+  "ville": "Solna",
+  "confiance": "sûr"
+ },
+ {
+  "id": "djurgarden",
+  "club": "Djurgården",
+  "cherche": "Djurgarden",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Suède",
+  "ville": "Stockholm",
+  "confiance": "sûr"
+ },
+ {
+  "id": "malmo-ff",
+  "club": "Malmö FF",
+  "cherche": "Malmo FF",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Suède",
+  "ville": "Malmö",
+  "confiance": "sûr"
+ },
+ {
+  "id": "mjallby",
+  "club": "Mjällby",
+  "cherche": "Mjallby",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Suède",
+  "ville": "Sölvesborg",
+  "confiance": "sûr"
+ },
+ {
+  "id": "hammarby",
+  "club": "Hammarby",
+  "cherche": "Hammarby",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Suède",
+  "ville": "Stockholm",
+  "confiance": "sûr"
+ },
+ {
+  "id": "hjk",
+  "club": "HJK",
+  "cherche": "HJK",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Finlande",
+  "ville": "Helsinki",
+  "confiance": "sûr"
+ },
+ {
+  "id": "inter-turku",
+  "club": "Inter Turku",
+  "cherche": "Inter Turku",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Finlande",
+  "ville": "Åbo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "kups",
+  "club": "KuPS",
+  "cherche": "KuPS",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Finlande",
+  "ville": "Kuopio",
+  "confiance": "imposé"
+ },
+ {
+  "id": "vikingur-reykjavik",
+  "club": "Víkingur Reykjavík",
+  "cherche": "Vikingur Reykjavik",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Islande",
+  "ville": "Reykjavík",
+  "confiance": "sûr"
+ },
+ {
+  "id": "ki",
+  "club": "KÍ",
+  "cherche": "KI Klaksvik",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Îles Féroé",
+  "ville": "Toftir",
+  "confiance": "imposé"
+ },
+ {
+  "id": "nsi",
+  "club": "NSÍ",
+  "cherche": "NSI Runavik",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Îles Féroé",
+  "ville": "Runavík",
+  "confiance": "imposé"
+ },
+ {
+  "id": "aberdeen",
+  "club": "Aberdeen",
+  "cherche": "Aberdeen",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Écosse",
+  "ville": "Aberdeen",
+  "confiance": "sûr"
+ },
+ {
+  "id": "celtic",
+  "club": "Celtic",
+  "cherche": "Celtic",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Écosse",
+  "ville": "Glasgow",
+  "confiance": "sûr"
+ },
+ {
+  "id": "rangers",
+  "club": "Rangers",
+  "cherche": "Rangers",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Écosse",
+  "ville": "Glasgow",
+  "confiance": "sûr"
+ },
+ {
+  "id": "hibernian",
+  "club": "Hibernian",
+  "cherche": "Hibernian",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Écosse",
+  "ville": "Edinburgh",
+  "confiance": "sûr"
+ },
+ {
+  "id": "bohemians",
+  "club": "Bohemians",
+  "cherche": "Bohemians",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Irlande",
+  "ville": "Dublin",
+  "confiance": "sûr"
+ },
+ {
+  "id": "linfield",
+  "club": "Linfield",
+  "cherche": "Linfield",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Irlande du Nord",
+  "ville": "Belfast",
+  "confiance": "sûr"
+ },
+ {
+  "id": "lincoln-red-imps",
+  "club": "Lincoln Red Imps",
+  "cherche": "Lincoln Red Imps",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Gibraltar",
+  "ville": "Gibraltar",
+  "confiance": "sûr"
+ },
+ {
+  "id": "flora",
+  "club": "Flora",
+  "cherche": "Flora",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Estonie",
+  "ville": "Tallinn",
+  "confiance": "sûr"
+ },
+ {
+  "id": "rigas-fs",
+  "club": "Rīgas FS",
+  "cherche": "RFS",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Lettonie",
+  "ville": "Riga",
+  "confiance": "imposé"
+ },
+ {
+  "id": "kauno-zalgiris",
+  "club": "Kauno Žalgiris",
+  "cherche": "Kauno Zalgiris",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Lituanie",
+  "ville": "Kaunas",
+  "confiance": "sûr"
+ },
+ {
+  "id": "differdange-03",
+  "club": "Differdange 03",
+  "cherche": "Differdange 03",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Luxembourg",
+  "ville": "Differdange",
+  "confiance": "sûr"
+ },
+ {
+  "id": "f91-dudelange",
+  "club": "F91 Dudelange",
+  "cherche": "Dudelange",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Luxembourg",
+  "ville": "Dudelange",
+  "confiance": "probable"
+ },
+ {
+  "id": "banik-ostrava",
+  "club": "Baník Ostrava",
+  "cherche": "Banik Ostrava",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Tchéquie",
+  "ville": "Ostrava",
+  "confiance": "sûr"
+ },
+ {
+  "id": "sigma-olomouc",
+  "club": "Sigma Olomouc",
+  "cherche": "Sigma Olomouc",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Tchéquie",
+  "ville": "Olomouc",
+  "confiance": "sûr"
+ },
+ {
+  "id": "slavia-praha",
+  "club": "Slavia Praha",
+  "cherche": "Slavia Praha",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Tchéquie",
+  "ville": "Praha",
+  "confiance": "sûr"
+ },
+ {
+  "id": "sparta-praha",
+  "club": "Sparta Praha",
+  "cherche": "Sparta Praha",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Tchéquie",
+  "ville": "Praha",
+  "confiance": "sûr"
+ },
+ {
+  "id": "debrecen",
+  "club": "Debrecen",
+  "cherche": "Debrecen",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Hongrie",
+  "ville": "Debrecen",
+  "confiance": "sûr"
+ },
+ {
+  "id": "ferencvarosi",
+  "club": "Ferencvárosi",
+  "cherche": "Ferencvaros",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Hongrie",
+  "ville": "Budapest",
+  "confiance": "sûr"
+ },
+ {
+  "id": "slovan-bratislava",
+  "club": "Slovan Bratislava",
+  "cherche": "Slovan Bratislava",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Slovaquie",
+  "ville": "Bratislava",
+  "confiance": "sûr"
+ },
+ {
+  "id": "zilina",
+  "club": "Žilina",
+  "cherche": "Zilina",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Slovaquie",
+  "ville": "Žilina",
+  "confiance": "sûr"
+ },
+ {
+  "id": "fcsb",
+  "club": "FCSB",
+  "cherche": "FCSB",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Roumanie",
+  "ville": "Bucharest",
+  "confiance": "sûr"
+ },
+ {
+  "id": "universitatea-cluj",
+  "club": "Universitatea Cluj",
+  "cherche": "Universitatea Cluj",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Roumanie",
+  "ville": "Cluj-Napoca",
+  "confiance": "sûr"
+ },
+ {
+  "id": "sheriff",
+  "club": "Sheriff",
+  "cherche": "Sheriff Tiraspol",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Moldavie",
+  "ville": "Tiraspol",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cska-moskva",
+  "club": "CSKA Moskva",
+  "cherche": "CSKA Moscow",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Russie",
+  "ville": "Moskva",
+  "confiance": "probable"
+ },
+ {
+  "id": "krasnodar",
+  "club": "Krasnodar",
+  "cherche": "Krasnodar",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Russie",
+  "ville": "Krasnodar",
+  "confiance": "sûr"
+ },
+ {
+  "id": "spartak-moskva",
+  "club": "Spartak Moskva",
+  "cherche": "Spartak Moscow",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Russie",
+  "ville": "Moscou",
+  "confiance": "imposé"
+ },
+ {
+  "id": "rubin-kazan",
+  "club": "Rubin Kazan",
+  "cherche": "Rubin Kazan",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Russie",
+  "ville": "Kazan'",
+  "confiance": "sûr"
+ },
+ {
+  "id": "besiktas",
+  "club": "Beşiktaş",
+  "cherche": "Besiktas",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Turquie",
+  "ville": "İstanbul",
+  "confiance": "sûr"
+ },
+ {
+  "id": "fenerbahce",
+  "club": "Fenerbahçe",
+  "cherche": "Fenerbahce",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Turquie",
+  "ville": "İstanbul",
+  "confiance": "sûr"
+ },
+ {
+  "id": "galatasaray",
+  "club": "Galatasaray",
+  "cherche": "Galatasaray",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Turquie",
+  "ville": "İstanbul",
+  "confiance": "sûr"
+ },
+ {
+  "id": "trabzonspor",
+  "club": "Trabzonspor",
+  "cherche": "Trabzonspor",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Turquie",
+  "ville": "Trabzon",
+  "confiance": "sûr"
+ },
+ {
+  "id": "dynamo-kyiv",
+  "club": "Dynamo Kyiv",
+  "cherche": "Dynamo Kyiv",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Ukraine",
+  "ville": "Kiev",
+  "confiance": "sûr"
+ },
+ {
+  "id": "shakhtar-donetsk",
+  "club": "Shakhtar Donetsk",
+  "cherche": "Shakhtar Donetsk",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Ukraine",
+  "ville": "Donetsk",
+  "confiance": "sûr"
+ },
+ {
+  "id": "karpaty",
+  "club": "Karpaty",
+  "cherche": "Karpaty Lviv",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Ukraine",
+  "ville": "Lviv",
+  "confiance": "sûr"
+ },
+ {
+  "id": "metalist-1925-kharkiv",
+  "club": "Metalist 1925 Kharkiv",
+  "cherche": "Metalist 1925",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Ukraine",
+  "ville": "Kharkiv",
+  "confiance": "sûr"
+ },
+ {
+  "id": "hapoel-beer-sheva",
+  "club": "Hapoel Be'er Sheva",
+  "cherche": "Hapoel Beer Sheva",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Israël",
+  "ville": "Beer Sheva",
+  "confiance": "probable"
+ },
+ {
+  "id": "maccabi-tel-aviv",
+  "club": "Maccabi Tel Aviv",
+  "cherche": "Maccabi Tel Aviv",
+  "groupe": "Le reste de l'Europe",
+  "pays": "Israël",
+  "ville": "Tel Aviv",
+  "confiance": "sûr"
+ },
+ {
+  "id": "sao-paulo",
+  "club": "São Paulo",
+  "cherche": "Sao Paulo",
+  "groupe": "Amérique du Sud",
+  "pays": "Brésil",
+  "ville": "São Paulo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "corinthians",
+  "club": "Corinthians",
+  "cherche": "Corinthians",
+  "groupe": "Amérique du Sud",
+  "pays": "Brésil",
+  "ville": "São Paulo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "santos",
+  "club": "Santos",
+  "cherche": "Santos",
+  "groupe": "Amérique du Sud",
+  "pays": "Brésil",
+  "ville": "Santos",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cruzeiro",
+  "club": "Cruzeiro",
+  "cherche": "Cruzeiro",
+  "groupe": "Amérique du Sud",
+  "pays": "Brésil",
+  "ville": "Belo Horizonte",
+  "confiance": "sûr"
+ },
+ {
+  "id": "flamengo",
+  "club": "Flamengo",
+  "cherche": "Flamengo",
+  "groupe": "Amérique du Sud",
+  "pays": "Brésil",
+  "ville": "Rio de Janeiro",
+  "confiance": "sûr"
+ },
+ {
+  "id": "fluminense",
+  "club": "Fluminense",
+  "cherche": "Fluminense",
+  "groupe": "Amérique du Sud",
+  "pays": "Brésil",
+  "ville": "Rio de Janeiro",
+  "confiance": "sûr"
+ },
+ {
+  "id": "river-plate",
+  "club": "River Plate",
+  "cherche": "River Plate",
+  "groupe": "Amérique du Sud",
+  "pays": "Argentine",
+  "ville": "Capital Federal",
+  "confiance": "sûr"
+ },
+ {
+  "id": "boca-juniors",
+  "club": "Boca Juniors",
+  "cherche": "Boca Juniors",
+  "groupe": "Amérique du Sud",
+  "pays": "Argentine",
+  "ville": "Buenos Aires",
+  "confiance": "sûr"
+ },
+ {
+  "id": "estudiantes",
+  "club": "Estudiantes",
+  "cherche": "Estudiantes",
+  "groupe": "Amérique du Sud",
+  "pays": "Argentine",
+  "ville": "La Plata, Provincia de Buenos Aires",
+  "confiance": "sûr"
+ },
+ {
+  "id": "rosario-central",
+  "club": "Rosario Central",
+  "cherche": "Rosario Central",
+  "groupe": "Amérique du Sud",
+  "pays": "Argentine",
+  "ville": "Rosario",
+  "confiance": "sûr"
+ },
+ {
+  "id": "racing-club",
+  "club": "Racing Club",
+  "cherche": "Racing Club",
+  "groupe": "Amérique du Sud",
+  "pays": "Argentine",
+  "ville": "Avellaneda",
+  "confiance": "sûr"
+ },
+ {
+  "id": "newells-old-boys",
+  "club": "Newell's Old Boys",
+  "cherche": "Newell's Old Boys",
+  "groupe": "Amérique du Sud",
+  "pays": "Argentine",
+  "ville": "Rosario",
+  "confiance": "sûr"
+ },
+ {
+  "id": "boston-river",
+  "club": "Boston River",
+  "cherche": "Boston River",
+  "groupe": "Amérique du Sud",
+  "pays": "Uruguay",
+  "ville": "Montevideo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cerro-largo",
+  "club": "Cerro Largo",
+  "cherche": "Cerro Largo",
+  "groupe": "Amérique du Sud",
+  "pays": "Uruguay",
+  "ville": "Melo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "nacional",
+  "club": "Nacional",
+  "cherche": "Nacional",
+  "groupe": "Amérique du Sud",
+  "pays": "Uruguay",
+  "ville": "Montevideo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "penarol",
+  "club": "Peñarol",
+  "cherche": "Penarol",
+  "groupe": "Amérique du Sud",
+  "pays": "Uruguay",
+  "ville": "Montevideo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "danubio",
+  "club": "Danubio",
+  "cherche": "Danubio",
+  "groupe": "Amérique du Sud",
+  "pays": "Uruguay",
+  "ville": "Montevideo",
+  "confiance": "sûr"
+ },
+ {
+  "id": "independiente-petrolero",
+  "club": "Independiente Petrolero",
+  "cherche": "Independiente Petrolero",
+  "groupe": "Amérique du Sud",
+  "pays": "Bolivie",
+  "ville": "Sucre",
+  "confiance": "sûr"
+ },
+ {
+  "id": "always-ready",
+  "club": "Always Ready",
+  "cherche": "Always Ready",
+  "groupe": "Amérique du Sud",
+  "pays": "Bolivie",
+  "ville": "El Alto",
+  "confiance": "sûr"
+ },
+ {
+  "id": "ohiggins",
+  "club": "O'Higgins",
+  "cherche": "O'Higgins",
+  "groupe": "Amérique du Sud",
+  "pays": "Chili",
+  "ville": "Rancagua",
+  "confiance": "sûr"
+ },
+ {
+  "id": "universidad-catolica",
+  "club": "Universidad Católica",
+  "cherche": "Universidad Catolica",
+  "groupe": "Amérique du Sud",
+  "pays": "Chili",
+  "ville": "Santiago de Chile",
+  "confiance": "sûr"
+ },
+ {
+  "id": "universidad-chile",
+  "club": "Universidad Chile",
+  "cherche": "Universidad de Chile",
+  "groupe": "Amérique du Sud",
+  "pays": "Chili",
+  "ville": "Santiago de Chile",
+  "confiance": "sûr"
+ },
+ {
+  "id": "america-de-cali",
+  "club": "América de Cali",
+  "cherche": "America de Cali",
+  "groupe": "Amérique du Sud",
+  "pays": "Colombie",
+  "ville": "Cali",
+  "confiance": "sûr"
+ },
+ {
+  "id": "deportivo-cali",
+  "club": "Deportivo Cali",
+  "cherche": "Deportivo Cali",
+  "groupe": "Amérique du Sud",
+  "pays": "Colombie",
+  "ville": "Palmira",
+  "confiance": "sûr"
+ },
+ {
+  "id": "independiente-medellin",
+  "club": "Independiente Medellín",
+  "cherche": "Independiente Medellin",
+  "groupe": "Amérique du Sud",
+  "pays": "Colombie",
+  "ville": "Medellín",
+  "confiance": "sûr"
+ },
+ {
+  "id": "santa-fe",
+  "club": "Santa Fe",
+  "cherche": "Independiente Santa Fe",
+  "groupe": "Amérique du Sud",
+  "pays": "Colombie",
+  "ville": "Bogotá",
+  "confiance": "imposé"
+ },
+ {
+  "id": "barcelona-guayaquil",
+  "club": "Barcelona Guayaquil",
+  "cherche": "Barcelona SC",
+  "groupe": "Amérique du Sud",
+  "pays": "Équateur",
+  "ville": "Guayaquil",
+  "confiance": "sûr"
+ },
+ {
+  "id": "independiente-del-valle",
+  "club": "Independiente del Valle",
+  "cherche": "Independiente del Valle",
+  "groupe": "Amérique du Sud",
+  "pays": "Équateur",
+  "ville": "Sangolquí",
+  "confiance": "sûr"
+ },
+ {
+  "id": "2-de-mayo",
+  "club": "2 de Mayo",
+  "cherche": "2 de Mayo",
+  "groupe": "Amérique du Sud",
+  "pays": "Paraguay",
+  "ville": "Pedro Juan Caballero",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cerro-porteno",
+  "club": "Cerro Porteño",
+  "cherche": "Cerro Porteno",
+  "groupe": "Amérique du Sud",
+  "pays": "Paraguay",
+  "ville": "Asunción",
+  "confiance": "sûr"
+ },
+ {
+  "id": "alianza-lima",
+  "club": "Alianza Lima",
+  "cherche": "Alianza Lima",
+  "groupe": "Amérique du Sud",
+  "pays": "Pérou",
+  "ville": "Lima",
+  "confiance": "sûr"
+ },
+ {
+  "id": "metropolitanos",
+  "club": "Metropolitanos",
+  "cherche": "Metropolitanos",
+  "groupe": "Amérique du Sud",
+  "pays": "Venezuela",
+  "ville": "Caracas",
+  "confiance": "sûr"
+ },
+ {
+  "id": "los-angeles-fc",
+  "club": "Los Angeles FC",
+  "cherche": "Los Angeles FC",
+  "groupe": "Amérique du Nord",
+  "pays": "États-Unis",
+  "ville": "Los Angeles",
+  "confiance": "sûr"
+ },
+ {
+  "id": "new-york-rb",
+  "club": "New York RB",
+  "cherche": "New York Red Bulls",
+  "groupe": "Amérique du Nord",
+  "pays": "États-Unis",
+  "ville": "Harrison",
+  "confiance": "imposé"
+ },
+ {
+  "id": "sporting-kc",
+  "club": "Sporting KC",
+  "cherche": "Sporting Kansas City",
+  "groupe": "Amérique du Nord",
+  "pays": "États-Unis",
+  "ville": "Kansas City",
+  "confiance": "imposé"
+ },
+ {
+  "id": "inter-miami",
+  "club": "Inter Miami",
+  "cherche": "Inter Miami",
+  "groupe": "Amérique du Nord",
+  "pays": "États-Unis",
+  "ville": "Miami",
+  "confiance": "sûr"
+ },
+ {
+  "id": "san-diego",
+  "club": "San Diego",
+  "cherche": "San Diego FC",
+  "groupe": "Amérique du Nord",
+  "pays": "États-Unis",
+  "ville": "California",
+  "confiance": "sûr"
+ },
+ {
+  "id": "orlando-city",
+  "club": "Orlando City",
+  "cherche": "Orlando City",
+  "groupe": "Amérique du Nord",
+  "pays": "États-Unis",
+  "ville": "Orlando",
+  "confiance": "sûr"
+ },
+ {
+  "id": "atlanta-united",
+  "club": "Atlanta United",
+  "cherche": "Atlanta United",
+  "groupe": "Amérique du Nord",
+  "pays": "États-Unis",
+  "ville": "Atlanta",
+  "confiance": "sûr"
+ },
+ {
+  "id": "seattle-sounders",
+  "club": "Seattle Sounders",
+  "cherche": "Seattle Sounders",
+  "groupe": "Amérique du Nord",
+  "pays": "États-Unis",
+  "ville": "Seattle",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cincinnati",
+  "club": "Cincinnati",
+  "cherche": "FC Cincinnati",
+  "groupe": "Amérique du Nord",
+  "pays": "États-Unis",
+  "ville": "Cincinnati",
+  "confiance": "imposé"
+ },
+ {
+  "id": "tigres-uanl",
+  "club": "Tigres UANL",
+  "cherche": "Tigres UANL",
+  "groupe": "Amérique du Nord",
+  "pays": "Mexique",
+  "ville": "San Nicolás de los Garza",
+  "confiance": "sûr"
+ },
+ {
+  "id": "monterrey",
+  "club": "Monterrey",
+  "cherche": "Monterrey",
+  "groupe": "Amérique du Nord",
+  "pays": "Mexique",
+  "ville": "Guadalupe",
+  "confiance": "sûr"
+ },
+ {
+  "id": "guadalajara",
+  "club": "Guadalajara",
+  "cherche": "Guadalajara",
+  "groupe": "Amérique du Nord",
+  "pays": "Mexique",
+  "ville": "Zapopan",
+  "confiance": "sûr"
+ },
+ {
+  "id": "cruz-azul",
+  "club": "Cruz Azul",
+  "cherche": "Cruz Azul",
+  "groupe": "Amérique du Nord",
+  "pays": "Mexique",
+  "ville": "Mexico City",
+  "confiance": "sûr"
+ }
+]

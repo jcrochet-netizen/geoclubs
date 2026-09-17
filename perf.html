@@ -1,0 +1,40 @@
+<!doctype html><meta charset="utf-8"><title>perf</title>
+<style>
+ body{margin:0;background:#070D1A;color:#E9EEFB;font:13px ui-monospace,monospace}
+ #wrap{position:relative;width:900px;height:560px;margin:10px auto;overflow:hidden}
+ .m-canvas{position:absolute;inset:0;touch-action:none}
+ .m-overlay{position:absolute;inset:0;pointer-events:none}
+ #out{width:900px;margin:0 auto;white-space:pre-wrap}
+</style>
+<div id="wrap"></div><pre id="out">…</pre>
+<script src="assets/map.js"></script>
+<script>
+(async () => {
+  const wrap = document.getElementById('wrap'), out = document.getElementById('out');
+  const j = u => fetch(u).then(r => r.json());
+  const coarse = await j('data/basemap.json');
+  const map = new GeoMap(wrap, { homeBox:{w:-179,e:179,s:-55,n:78}, maxZoom: 4000 });
+  map.setGeo(coarse);
+  const fine = await j('data/basemap-detail.json');
+  map.setDetail(fine);
+
+  /* Vraie mesure : on anime pendant 1 s et on compte les images rendues. */
+  function fps(label, ms = 1000) {
+    return new Promise(res => {
+      let n = 0; const t0 = performance.now();
+      (function loop() {
+        map.cx += 0.05; map.draw(); n++;
+        if (performance.now() - t0 < ms) requestAnimationFrame(loop);
+        else res(`${label.padEnd(28)} ${Math.round(n / ((performance.now()-t0)/1000))} i/s`);
+      })();
+    });
+  }
+  const lines = [`points : grossier ${coarse.reduce((a,f)=>a+f.r.reduce((b,r)=>b+r.length,0),0)} · fin ${fine.reduce((a,f)=>a+f.r.reduce((b,r)=>b+r.length,0),0)}`];
+  map.home(false);                lines.push(await fps('monde entier'));
+  map.zoomBy(6, 450, 280);        lines.push(await fps('zoom 6x'));
+  map.zoomBy(8, 450, 280);        lines.push(await fps('zoom 48x (fond fin)'));
+  map.zoomBy(10, 450, 280);       lines.push(await fps('zoom 480x (fond fin)'));
+  out.textContent = lines.join('\n');
+  window.__done = true;
+})();
+</script>
