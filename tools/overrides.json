@@ -164,5 +164,61 @@
     "lon": -0.08333,
     "venue": "Dawu Sports Stadium",
     "source": "Wikidata — absent de Sportmonks"
+  },
+  "lokomotiv-plovdiv": {
+    "city": "Plovdiv",
+    "lat": 42.13389,
+    "lon": 24.77167,
+    "venue": "Stade Lokomotiv"
+  },
+  "differdange-03": {
+    "city": "Differdange",
+    "lat": 49.51393,
+    "lon": 5.88978,
+    "venue": "Stade municipal"
+  },
+  "skendija-79": {
+    "name": "KF Shkëndija",
+    "city": "Tetovo",
+    "lat": 42.01869,
+    "lon": 20.97818,
+    "venue": "Stade municipal de Tetovo"
+  },
+  "universitatea-cluj": {
+    "city": "Cluj-Napoca",
+    "lat": 46.76833,
+    "lon": 23.57222,
+    "venue": "Cluj Arena"
+  },
+  "cs-sfaxien": {
+    "city": "Sfax",
+    "lat": 34.73361,
+    "lon": 10.74611,
+    "venue": "Stade Taïeb Mhiri"
+  },
+  "hammarby": {
+    "city": "Stockholm",
+    "lat": 59.29139,
+    "lon": 18.08528,
+    "venue": "3Arena"
+  },
+  "djurgarden": {
+    "city": "Stockholm",
+    "lat": 59.34528,
+    "lon": 18.07889,
+    "venue": "Stade olympique de Stockholm"
+  },
+  "ki": {
+    "name": "KÍ Klaksvík",
+    "city": "Klaksvík",
+    "lat": 62.22525,
+    "lon": -6.5792,
+    "venue": "Stade Djúpumýra"
+  },
+  "dinamo-batumi": {
+    "city": "Kobuleti",
+    "lat": 41.81298,
+    "lon": 41.77446,
+    "venue": "Chele Arena"
   }
 }

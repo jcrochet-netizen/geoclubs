@@ -1121,7 +1121,7 @@
   "cherche": "Lokomotiv Plovdiv",
   "groupe": "Le reste de l'Europe",
   "pays": "Bulgarie",
-  "ville": "Bulgaria",
+  "ville": "Plovdiv",
   "confiance": "sûr"
  },
  {
@@ -1184,7 +1184,7 @@
   "cherche": "Shkendija",
   "groupe": "Le reste de l'Europe",
   "pays": "Macédoine du Nord",
-  "ville": "Foča",
+  "ville": "Tetovo",
   "confiance": "imposé"
  },
  {
@@ -1490,7 +1490,7 @@
   "cherche": "KI Klaksvik",
   "groupe": "Le reste de l'Europe",
   "pays": "Îles Féroé",
-  "ville": "Toftir",
+  "ville": "Klaksvík",
   "confiance": "imposé"
  },
  {
@@ -2759,7 +2759,7 @@
   "cherche": "CS Sfaxien",
   "groupe": "Afrique",
   "pays": "Tunisie",
-  "ville": "sfax",
+  "ville": "Sfax",
   "confiance": "sûr"
  },
  {

@@ -131,6 +131,22 @@ Trois garde-fous tournent à chaque construction et signalent ce qui cloche :
 Relisez toujours `tools/build-report.json` : chaque correspondance y porte son
 niveau de confiance.
 
+### Auditer la géographie
+
+```bash
+node tools/check-clubs.mjs
+```
+
+Teste l'**appartenance réelle de chaque club au polygone de son pays**, contre
+les frontières Natural Earth. C'est bien plus sûr que la distance au centre du
+pays intégrée à la construction : le CS Sfaxien, pointé au Caire, n'était qu'à
+2 100 km du centre de la Tunisie, sous le seuil de 2 500 km, et passait donc
+inaperçu.
+
+Un club signalé « hors de toute terre » est le plus souvent un stade côtier que
+le trait de côte simplifié rejette d'un kilomètre — à distinguer d'un club
+franchement dans le mauvais pays, que le script sépare clairement.
+
 ## Mise en ligne et intégration
 
 Identiques à GeoConf : *Settings → Pages → Source : GitHub Actions*, puis une
