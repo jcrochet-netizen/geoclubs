@@ -140,7 +140,7 @@ Identiques à GeoConf : *Settings → Pages → Source : GitHub Actions*, puis u
 |---|---|---|
 | `g` | Ensembles présélectionnés (`mix` pour le mix de pays) | `?g=afrique` |
 | `n` | Nombre de clubs : `10`, `20`, `50`, `100`, `0` | `?n=20` |
-| `share` | URL utilisée dans le texte de partage | `?share=https://exemple.fr/jeu` |
+| `share` | Force l'URL du texte de partage (facultatif : le jeu détecte la page hôte) | `?share=https://exemple.fr/jeu` |
 
 ## Structure
 

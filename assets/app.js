@@ -39,7 +39,7 @@
   var S = {
     clubs: [], groups: [], logos: {},
     sel: {}, mix: false, count: 10,
-    deck: [], idx: 0, results: [], guess: null, revealed: false, map: null,
+    deck: [], idx: 0, results: [], guess: null, revealed: false, map: null, parentURL: null,
     hintsLeft: 0, hintsTotal: 0, hintUsed: false, hintsSpent: 0
   };
 
@@ -365,9 +365,24 @@
     show('scr-end');
   }
 
+  /** Une URL http(s) et rien d'autre : elle finira dans un href et dans un texte
+      de partage, pas question d'y laisser passer un javascript:. */
+  function httpURL(u) {
+    if (!u || typeof u !== 'string') return null;   // sinon new URL(null,…) donne « /null »
+    try { var x = new URL(u, location.href);
+      return (x.protocol === 'http:' || x.protocol === 'https:') ? x.href : null;
+    } catch (e) { return null; }
+  }
+
+  /** Le partage doit pointer vers la page qui héberge l'iframe, jamais vers
+      github.io. Par ordre de fiabilité : la consigne explicite, l'URL que la
+      page hôte nous envoie, à défaut le référent, et en dernier recours nous. */
   function shareURL() {
     var q = new URLSearchParams(location.search);
-    return q.get('share') || (location.origin + location.pathname);
+    return httpURL(q.get('share'))
+        || S.parentURL
+        || (window.parent !== window ? httpURL(document.referrer) : null)
+        || (location.origin + location.pathname);
   }
 
   function buildShare(total, avg) {
@@ -513,6 +528,15 @@
         '</small><br><br>Le jeu doit être servi via HTTP, pas ouvert en <code>file://</code>.</p>';
     });
   }
+
+  window.addEventListener('message', function (e) {
+    if (!e.data || e.data.type !== 'geoclubs:parent') return;
+    var u = httpURL(e.data.url);
+    if (!u) return;
+    S.parentURL = u;
+    var link = $('foot-link');
+    if (link) link.href = u;
+  });
 
   document.addEventListener('DOMContentLoaded', function () {
     $('btn-play').addEventListener('click', startGame);

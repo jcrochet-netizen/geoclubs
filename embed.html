@@ -34,14 +34,22 @@
 </main>
 
 <script>
-/* Redimensionnement automatique de l'iframe.
-   Le jeu émet { type:'geoclubs:height', height:<px> } à chaque changement d'écran. */
 (function () {
-  var frame = document.getElementById('geoclubs');
-  window.addEventListener('message', function (e) {
-    if (!e.data || e.data.type !== 'geoclubs:height') return;
-    if (e.source !== frame.contentWindow) return;      // on n'écoute que notre iframe
-    frame.style.height = Math.max(600, e.data.height + 8) + 'px';
+  var f = document.getElementById('geoclubs');
+
+  // On annonce au jeu l'adresse de CETTE page : ses boutons de partage doivent
+  // renvoyer ici, pas vers github.io.
+  function annoncer() {
+    try { f.contentWindow.postMessage({ type: 'geoclubs:parent', url: location.href }, '*'); } catch (e) {}
+  }
+  f.addEventListener('load', annoncer);
+  annoncer();
+
+  // Le jeu renvoie sa hauteur : l'accueil, une manche et l'écran final
+  // n'occupent pas la même place.
+  addEventListener('message', function (e) {
+    if (e.source !== f.contentWindow || !e.data) return;
+    if (e.data.type === 'geoclubs:height') f.style.height = Math.max(600, e.data.height + 8) + 'px';
   });
 })();
 </script>
