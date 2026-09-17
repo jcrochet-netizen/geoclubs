@@ -93,25 +93,26 @@
     });
   }
 
-  /** Tirage « Mix de pays » : on prend un club par pays avant d'en reprendre un
-      deuxième, pour qu'une partie courte traverse vraiment le monde au lieu de
-      rester en Angleterre et en Espagne, les mieux fournies. */
-  function diverseDeck(pool, n) {
-    var byCountry = {};
+  var BIG5_CC = ['ENG', 'ES', 'IT', 'DE', 'FR'];   // Angleterre, Espagne, Italie, Allemagne, France
+  var BIG5_MAX = 2;
+
+  /** Tirage « Mix de pays » : aléatoire, mais deux clubs au maximum par pays du
+      Big 5. Sans ce plafond, ces cinq pays pèsent 95 clubs sur 318 et raflent
+      près d'un tirage sur trois. */
+  function mixDeck(pool, n) {
+    var used = {}, out = [], recales = [];
     shuffle(pool.slice()).forEach(function (c) {
-      (byCountry[c.cc] = byCountry[c.cc] || []).push(c);
-    });
-    var countries = shuffle(Object.keys(byCountry)), out = [], pass = 0;
-    while (out.length < n) {
-      var added = false;
-      for (var i = 0; i < countries.length && out.length < n; i++) {
-        var list = byCountry[countries[i]];
-        if (list.length > pass) { out.push(list[pass]); added = true; }
+      if (out.length >= n) return;
+      if (BIG5_CC.indexOf(c.cc) >= 0) {
+        if ((used[c.cc] || 0) >= BIG5_MAX) { recales.push(c); return; }
+        used[c.cc] = (used[c.cc] || 0) + 1;
       }
-      if (!added) break;
-      pass++;
-    }
-    return shuffle(out);
+      out.push(c);
+    });
+    // Pool trop étroit pour honorer le plafond : on complète plutôt que de
+    // rendre moins de manches que promis.
+    if (out.length < n) out = out.concat(recales.slice(0, n - out.length));
+    return shuffle(out).slice(0, n);
   }
 
   function renderGroups() {
@@ -123,7 +124,7 @@
     mix.className = 'chip chip-mix';
     mix.dataset.mix = '1';
     mix.innerHTML = '<span class="chip-main">Mix de pays</span>' +
-                    '<span class="chip-sub">' + S.countryCount + ' pays, un par un</span>';
+                    '<span class="chip-sub">2 clubs max par pays du Big 5</span>';
     mix.addEventListener('click', function () {
       S.mix = !S.mix;
       if (S.mix) S.groups.forEach(function (g) { S.sel[g.name] = false; });
@@ -186,7 +187,7 @@
     $('btn-play').disabled = n === 0;
     $('cta-sub').textContent = n === 0 ? 'Choisissez au moins un ensemble'
       : plural(rounds, 'manche') + ' · ' + plural(hintsFor(rounds), 'indice') + ' · ' +
-        (S.mix ? 'un club par pays'
+        (S.mix ? 'au hasard, 2 max par pays du Big 5'
                : picked.length === S.groups.length ? 'tout le monde'
                : picked.map(function (g) { return g.name; }).join(' · '));
     $('btn-all-groups').textContent = (S.mix || picked.length) ? 'Tout décocher' : 'Tout mélanger';
@@ -227,7 +228,7 @@
   function startGame() {
     var pool = poolFor(S.sel);
     var n = S.count === 0 ? pool.length : Math.min(S.count, pool.length);
-    S.deck = S.mix ? diverseDeck(pool, n) : shuffle(pool.slice()).slice(0, n);
+    S.deck = S.mix ? mixDeck(pool, n) : shuffle(pool.slice()).slice(0, n);
     S.idx = 0; S.results = [];
     S.hintsTotal = hintsFor(n); S.hintsLeft = S.hintsTotal;
     S.hintUsed = false; S.hintsSpent = 0;
@@ -446,7 +447,8 @@
     Promise.all([
       json('data/clubs.json'),
       json('data/basemap.json'),
-      json('data/logos.json').catch(function () { return {}; })
+      json('data/logos.json').catch(function () { return {}; }),
+      json('data/groups.json').catch(function () { return null; })
     ]).then(function (res) {
       S.clubs = res[0]; S.logos = res[2] || {};
 
@@ -459,6 +461,12 @@
           count[g]++;
         });
       });
+      // data/groups.json donne l'ordre des sections de clubs.txt ; sans lui on
+      // retomberait sur l'ordre alphabétique des pays, qui n'a aucun sens ici.
+      if (res[3] && res[3].length) {
+        var fromFile = res[3].filter(function (g) { return g in count; });
+        order = fromFile.concat(order.filter(function (g) { return fromFile.indexOf(g) < 0; }));
+      }
       S.groups = order.map(function (g) { return { name: g, n: count[g] }; });
 
       S.countryCount = Object.keys(S.clubs.reduce(function (a, c) { a[c.cc] = 1; return a; }, {})).length;

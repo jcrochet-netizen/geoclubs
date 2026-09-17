@@ -125,5 +125,44 @@
   },
   "pyramids-fc": {
     "name": "Pyramids FC"
+  },
+  "atletico-ottawa": {
+    "manuel": true,
+    "name": "Atlético Ottawa",
+    "city": "Ottawa",
+    "cc": "CA",
+    "lat": 45.39818,
+    "lon": -75.68365,
+    "venue": "TD Place Stadium",
+    "source": "Wikidata — absent de Sportmonks"
+  },
+  "fuerte-san-francisco": {
+    "manuel": true,
+    "name": "Fuerte San Francisco",
+    "city": "San Francisco Gotera",
+    "cc": "SV",
+    "lat": 13.7,
+    "lon": -88.1,
+    "venue": "Estadio Luis Amílcar Moreno",
+    "source": "Wikidata — absent de Sportmonks"
+  },
+  "herrera-fc": {
+    "manuel": true,
+    "name": "Herrera FC",
+    "city": "Chitré",
+    "cc": "PA",
+    "lat": 7.96667,
+    "lon": -80.43333,
+    "source": "Wikidata (es) — absent de Sportmonks"
+  },
+  "dreams-fc": {
+    "manuel": true,
+    "name": "Dreams FC",
+    "city": "Dawu",
+    "cc": "GH",
+    "lat": 5.98333,
+    "lon": -0.08333,
+    "venue": "Dawu Sports Stadium",
+    "source": "Wikidata — absent de Sportmonks"
   }
 }

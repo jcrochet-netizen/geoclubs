@@ -6,7 +6,7 @@
 #  Nom #12345   → identifiant Sportmonks imposé, quand la recherche se trompe
 # ══════════════════════════════════════════════════════════════════════════
 
-## Les 5 grands championnats
+## Big 5 Europe
 @league 301
 @league 384
 @league 8
@@ -244,6 +244,18 @@ Monterrey | Mexico
 Guadalajara | Mexico
 Cruz Azul | Mexico
 
+# Canada
+CF Montreal | Canada
+Toronto FC | Canada
+Vancouver Whitecaps | Canada
+!Atlético Ottawa
+
+# Amérique centrale
+San Carlos | Costa Rica
+!Fuerte San Francisco
+Real Espana | Honduras
+!Herrera FC
+
 ## Asie & Océanie
 
 # Arabie saoudite
@@ -337,6 +349,6 @@ Zamalek | Egypt
 Canon Yaounde | Cameroon
 TP Mazembe | DR Congo
 ASEC Mimosas | Ivory Coast
-Dreams FC | Ghana
+!Dreams FC
 Diambars | Senegal
 Generation Foot #17142

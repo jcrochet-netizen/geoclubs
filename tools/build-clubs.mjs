@@ -94,6 +94,16 @@ const NATION = {              // les nations britanniques n'ont pas de code ISO 
   Wales:              { cc: 'WAL', country: 'Pays de Galles',    flag: '🏴󠁧󠁢󠁷󠁬󠁳󠁿' },
   'Northern Ireland': { cc: 'NIR', country: 'Irlande du Nord',   flag: '🏴' },
 };
+function identityFromCC(cc) {
+  cc = String(cc || '').toUpperCase();
+  for (const k in NATION) if (NATION[k].cc === cc) return NATION[k];
+  const flag = /^[A-Z]{2}$/.test(cc)
+    ? cc.replace(/./g, ch => String.fromCodePoint(127397 + ch.charCodeAt())) : '';
+  let country = cc;
+  try { country = FR.of(cc) || cc; } catch {}
+  return { cc, country, flag };
+}
+
 function identity(c) {
   if (!c) return { cc: '??', country: '?', flag: '' };
   if (NATION[c.name]) return NATION[c.name];
@@ -272,13 +282,18 @@ for (let line of raw.split('\n')) {
   if (line.toLowerCase().startsWith('@league')) {
     entries.push({ kind: 'league', ref: line.slice(7).trim(), group });
   } else {
+    if (line.startsWith('!')) {                 // club absent de Sportmonks
+      entries.push({ kind: 'manual', name: line.slice(1).trim(), group });
+      continue;
+    }
     const forced = line.match(/#(\d+)\s*$/);
     if (forced) line = line.slice(0, forced.index).trim();
     const [name, country] = line.split('|').map(x => x && x.trim());
     entries.push({ kind: 'club', name, country, group, id: forced ? +forced[1] : null });
   }
 }
-console.log(`${entries.filter(e => e.kind === 'club').length} club(s) et ` +
+console.log(`${entries.filter(e => e.kind === 'club').length} club(s), ` +
+            `${entries.filter(e => e.kind === 'manual').length} saisie(s) manuelle(s) et ` +
             `${entries.filter(e => e.kind === 'league').length} ligue(s) à traiter` +
             `${DRY ? '  ·  SIMULATION' : ''}\n`);
 
@@ -337,6 +352,24 @@ async function push(team, group, confidence, wanted) {
 
 for (const e of entries) {
   try {
+    if (e.kind === 'manual') {
+      const id = slug(e.name);
+      const f = fixes[id];
+      if (!f || f.lat == null || f.lon == null || !f.cc)
+        throw new Error(`club manuel : renseignez cc, lat et lon sous « ${id} » dans tools/overrides.json`);
+      if (clubs.has(id)) { console.log(`  · ${e.name.padEnd(28)} doublon`); continue; }
+      const idt = identityFromCC(f.cc);
+      clubs.set(id, { id, name: f.name || e.name, city: f.city || '?',
+        cc: idt.cc, country: idt.country, flag: idt.flag,
+        lat: +(+f.lat).toFixed(5), lon: +(+f.lon).toFixed(5),
+        groups: [e.group], venue: f.venue || null, sm: null, manuel: true });
+      report.push({ id, club: f.name || e.name, groupe: e.group, pays: idt.country,
+                    ville: f.city || '?', confiance: 'manuel',
+                    source: f.source || 'saisi à la main' });
+      console.log(`  ✎ ${e.name.padEnd(28)} ← saisie manuelle           [${idt.country}]`);
+      continue;
+    }
+
     if (e.kind === 'league') {
       let lid = /^\d+$/.test(e.ref) ? +e.ref : null;
       let lname = e.ref;
@@ -398,8 +431,13 @@ for (const e of entries) {
 
 /* un club présent dans plusieurs sections cumule ses groupes */
 const list = [...clubs.values()].sort((a, b) => (a.country + a.name).localeCompare(b.country + b.name, 'fr'));
+const groupOrder = [];
+for (const e of entries) if (!groupOrder.includes(e.group)) groupOrder.push(e.group);
+
 if (!DRY) {
   await writeFile(join(ROOT, 'data/clubs.json'), JSON.stringify(list, null, 0));
+  await writeFile(join(ROOT, 'data/groups.json'), JSON.stringify(
+    groupOrder.filter(g => list.some(c => c.groups.includes(g))), null, 1) + '\n');
   await writeFile(join(ROOT, 'data/logos.json'), JSON.stringify(logos, null, 1) + '\n');
 }
 await writeFile(join(ROOT, 'tools/build-report.json'), JSON.stringify(report, null, 1) + '\n');

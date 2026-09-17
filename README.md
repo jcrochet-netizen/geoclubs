@@ -13,16 +13,17 @@ carte mondiale.
 
 ## Ce qu'il y a dedans
 
-- **309 clubs, 85 pays, six continents**, de Seattle à Auckland.
-- Six ensembles cumulables : les 5 grands championnats (96 clubs), le reste de
-  l'Europe (108), l'Asie & Océanie (36), l'Amérique du Sud (32), l'Afrique (24)
-  et l'Amérique du Nord (13).
+- **318 clubs, 91 pays, six continents**, de Vancouver à Auckland.
+- Six ensembles cumulables : Big 5 Europe (96 clubs), le reste de l'Europe (108),
+  l'Asie & Océanie (36), l'Amérique du Sud (32), l'Afrique (25) et l'Amérique du
+  Nord (21). Leur ordre à l'écran suit celui des sections de `tools/clubs.txt`,
+  conservé dans `data/groups.json`.
 - **Le pays n'est jamais affiché** — des indices permettent de l'acheter, à raison
   d'un par tranche de dix clubs, plafonné à dix : 10 clubs → 1 indice, 20 → 2,
   50 → 5, 100 → 10, tout le paquet → 10.
-- Une case **« Mix de pays »** tire un club par pays avant d'en reprendre un
-  deuxième : sur 50 manches, 50 pays différents au lieu de 33 en moyenne avec un
-  tirage classique, que l'Angleterre et l'Espagne dominent.
+- Une case **« Mix de pays »** tire au hasard, mais **deux clubs au maximum par
+  pays du Big 5**. Sans ce plafond, un tirage de 20 manches sort jusqu'à 5 clubs
+  d'un même pays ; mesuré sur 120 tirages, le plafond n'est jamais dépassé.
 - Rien n'est coché au départ : au joueur de composer sa partie.
 - Carte du monde **en Canvas**, zoom et déplacement à 60 images/seconde.
 - 10, 20, 50, 100 ou tous les clubs, tirage **sans remise**.
@@ -107,6 +108,12 @@ corrige au cas par cas, par identifiant de club :
 
 Champs acceptés : `lat`, `lon`, `city`, `name`, `venue`.
 
+Pour un club **absent de Sportmonks** — Atlético Ottawa, Herrera FC, Fuerte San
+Francisco et Dreams FC le sont — écrivez `!Nom du club` dans `tools/clubs.txt` et
+définissez-le entièrement dans `overrides.json`, avec au minimum `cc`, `lat` et
+`lon`. Ces quatre-là ont leurs coordonnées reprises de Wikidata, pas saisies de
+mémoire ; le champ `source` le note.
+
 Trois garde-fous tournent à chaque construction et signalent ce qui cloche :
 
 - **cohérence géographique** — un club à plus de 2 500 km du centre de son pays
@@ -141,7 +148,8 @@ perf.html                   mesure des images par seconde
 assets/map.js               moteur Canvas : projection, deux LOD, culling
 assets/app.js               logique de jeu, indices, score, partage
 assets/style.css            thème sombre
-data/clubs.json             309 clubs
+data/clubs.json             318 clubs
+data/groups.json            l'ordre des ensembles à l'écran
 data/basemap.json           fond grossier (vue mondiale)
 data/basemap-detail.json    fond fin (zoom)
 data/logos.json             id du club → chemin du logo
